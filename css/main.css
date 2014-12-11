@@ -1,50 +1,19 @@
 html,body {
-    height: 100%;
-    margin: 0;
-    background-color: #F4F4F4;
-    font-family: 'RobotoDraft', sans-serif;
-}
-  
-#sideHeaderPanel {
-	border-right:0;
-	background:  white;
-	border-right: 1px solid #e0e0e0;
+	font-family: 'RobotoDraft', sans-serif;
 }
 
-#sideHeaderPanel core-toolbar {
-	background: #4285f4;
+.navbar {
+	background: white;
+	margin-bottom: 0px;
 }
 
 
-#sideHeaderPanel paper-item a {
-	text-decoration: none;
-	color: rgb(66, 66, 66);
-	padding-left: 20px;
-}
-
-#mainHeaderPanel {
-	height: 100%;
-}
-
-
-.title a {
-	color: white;
-	text-decoration: none;
-	padding-left: 20px;
-}
-
-
-#card-container {
-	overflow-y: scroll;
-	height: 100%;
-	margin-bottom: 100px;
-
-}
 
 .Field-container {
 	display: inline-block;
 	padding: 10px;
 }
+
 
 .Field-container .links {
 	display: block;
@@ -62,17 +31,35 @@ h3 {
 	text-align: center;
 }
 
-
-
 .card {
-	display: inline-block;
 	background: white;
-	box-sizing: border-box;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+}
+
+.gv-small {
 	width: 300px;
 	height: 600px;
+	display: inline-block;
+	box-sizing: border-box;
 	margin: 10px;
 	border-radius: 2px;
 	float: left;
+	position: relative;
+}
+
+.gv-large {
+	width: 700px;
+	padding: 20px;
+	display: inline-block;
+	box-sizing: border-box;
+	margin: 10px;
+	border-radius: 2px;
+	float: left;
+	position: relative;
+}
+
+body {
+	background: #F4F4F4;
 }
 
 
@@ -95,9 +82,9 @@ h3 {
 	background: #1976d2;
 	color: white;
 	font-size: 12px;
-	height: 16px;
+	height: 20px;
 	line-height: normal;
-	padding: 8px 0px;
+	padding: 0px 0px;
 	width: 100%;
 }
 
@@ -178,6 +165,7 @@ h3 {
 	background: #CD2121;
 }
 
+
 #Game-theory h3 {
 	color: #9c27b0;
 }
@@ -233,34 +221,21 @@ h3 {
 }
 
 #Streaming {
-	margin-bottom: 200px;
+	margin-bottom: 20px;
 }
 
-.content-card {
-	display: inline-block;
-	background: white;
-	box-sizing: border-box;
-	max-width: 800px;
-	margin: 16px;
-	padding: 16px;
-	border-radius: 2px;
-	margin-bottom: 100px;
+@media (max-width: 400px) {
+  .Field-container {
+    padding: 0;
+  }
+  .small, .large {
+  	margin: 0px;
+  }
+   .body {
+  	padding: 0px;
+  }
+ 
 }
 
 
-
-
-
-
-
-.element-label {
-height: 80px;
-line-height: 80px;
-padding-left: 24px;
-background-color: #fff;
-letter-spacing: 0.05em;
-font-size: 24px;
-font-weight: 400;
-color: #5265a2;
-}
 

@@ -1,31 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="">
 
 	{% include head.html %}
 
-	<body unresolved>
-	
-	<core-drawer-panel drawerWidth="200px" responsiveWidth="900px" touch-action>
-	
+	<body>
+		
 	{% include nav.html %}
-	    
-		<core-header-panel id="mainHeaderPanel" main mode="waterfall-tall" tallclass="medium-tall">
-		
-		
-				<paper-icon-button core-drawer-toggle class="menuButton" icon="menu" role="button" tabindex="0" aria-label="menu"></paper-icon-button>		
+	
+ <div class="container body">
 
-		
-			<div id="card-container">
+		{{ content }}
 
-				{{ content }}
-
-			</div>
+	</div>
 		  
-		</core-header-panel>
-
-		  
-	</core-drawer-panel>
-
 	{% include footer.html %}
    
 	</body>
