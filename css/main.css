@@ -226,7 +226,7 @@ body {
 
 @media (max-width: 350px) {
   .Field-container {
-    padding: 0;
+    padding: 10px 0px;
   }
   .small, .large {
   	margin: 0px;
