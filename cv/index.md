@@ -60,7 +60,7 @@ Lecture Notes in Computer Science, pages 94-104, 2010.  [doi:10.1007/978-3-642-1
 - Girish Varma. *[Conductance and eigenvalue.](http://arxiv.org/1009.1756)*
 
 #### Awards
-**Google PhD Fellowship in Algorithms**
+Google PhD Fellowship in Algorithms
 
 #### Internships
 
