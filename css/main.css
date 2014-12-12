@@ -7,6 +7,16 @@ html,body {
 	margin-bottom: 0px;
 }
 
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+ background-color: white; 
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+ background-color: white; 
+}
+.navbar-default .navbar-toggle {
+border-color: white;
+}
+
 
 
 .Field-container {
