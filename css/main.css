@@ -13,9 +13,14 @@ nav {
 	border: 0px;
 }
 
-.nav-brand {
-	color: white;
+.navbar-default .navbar-brand {
+color: white;
 }
+
+.navbar-default .navbar-toggle .icon-bar {
+background-color: white;
+}
+
 .navbar-default .navbar-nav>li>a {
 color: white;
 }
