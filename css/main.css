@@ -57,6 +57,18 @@ h3 {
 	text-align: center;
 }
 
+h4 {
+	margin-top: 15px;
+	color: crimson;
+}
+
+h5 {
+	text-transform: uppercase;
+	font-decoration: underline;
+	margin-top: 10px;
+	text-align: center;
+}
+
 .card {
 	background: white;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
