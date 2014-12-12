@@ -253,10 +253,6 @@ body {
 }
 
 @media (max-width: 1024px) {
-.Field-container {
-    padding: 5px 0px;
- }
- 
  .body {
     padding: 0px 0px;
   }
