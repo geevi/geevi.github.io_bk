@@ -9,7 +9,7 @@ _A219, STCS, Tata Institute of Fundamental Research,
 Colaba, Mumbai - 400005, Maharashtra, India  
 Mobile : +91-9769335204    
 Email : girishrv@tifr.res.in   
-Homepage : [http://geevi.in](http://geevi.in)_
+Homepage : [http://geevi.github.io](http://geevi.github.io)_
 
 #### Education
 
@@ -58,6 +58,9 @@ Lecture Notes in Computer Science, pages 94-104, 2010.  [doi:10.1007/978-3-642-1
 - Manoj Gopalkrishnan & Girish Varma. *[Playing games in an uncertain world.](http://arxiv.org/abs/1402.4570)* 
 
 - Girish Varma. *[Conductance and eigenvalue.](http://arxiv.org/1009.1756)*
+
+#### Awards
+**Google PhD Fellowship in Algorithms**
 
 #### Internships
 
