@@ -2,6 +2,11 @@ html,body {
 	font-family: 'RobotoDraft', sans-serif;
 }
 
+nav {
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+}
+
+
 .navbar {
 	background: white;
 	margin-bottom: 0px;
@@ -258,4 +263,7 @@ body {
 	
 }
 
+body {
+	padding-top: 50px;
+}
 
