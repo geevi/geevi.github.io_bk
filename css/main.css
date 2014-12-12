@@ -5,22 +5,30 @@ html,body {
 nav {
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
 }
+
+
 .navbar {
-	background: white;
+	background: #00bcd4;
 	margin-bottom: 0px;
 	border: 0px;
 }
 
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
- background-color: white; 
+.nav-brand {
+	color: white;
 }
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
- background-color: white; 
-}
-.navbar-default .navbar-toggle {
-border-color: white;
+.navbar-default .navbar-nav>li>a {
+color: white;
 }
 
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+ background-color: #00bcd4; 
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+ background-color: #00bcd4; 
+}
+.navbar-default .navbar-toggle {
+border-color: #00bcd4;
+}
 
 
 .Field-container {
