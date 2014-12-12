@@ -237,5 +237,15 @@ body {
  
 }
 
+@media (max-width: 700px) {
+.Field-container {
+    padding: 10px 0px;
+ }
+ 
+ .container {
+    padding: 10px 0px;
+  }
+	
+}
 
 
