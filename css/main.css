@@ -69,6 +69,10 @@ h5 {
 	text-align: center;
 }
 
+ul {
+	margin-left: 16px;
+}
+
 .card {
 	background: white;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
