@@ -18,7 +18,7 @@ Hardness of approximation, analysis of Boolean functions, communication complexi
   
 ##### Conference
 
-- Irit Dinur, Prahladh Harsha, Srikanth Srinivasan & Girish Varma. **[Derandomized graph product results using the low degree long code.](http://arxiv.org/1411.3517)* To appear in *Symp. on Theoretical Aspects of Computer Science 2015*.  
+- Irit Dinur, Prahladh Harsha, Srikanth Srinivasan & Girish Varma. **[Derandomized graph product results using the low degree long code.](http://arxiv.org/1411.3517)** To appear in *Symp. on Theoretical Aspects of Computer Science 2015*.  
 
 - Venkat Guruswami, Prahladh Harsha, Johan Hastad, Srikanth Srinivasan & Girish Varma. **[Super-polylogarithmic hypergraph coloring hardness via low-degree long codes.](http://arxiv.org/abs/1311.7407)** In *Proc. 46th ACM Symp. on Theory of Computing (STOC)*, pages 614–623. 2014. [doi:10.1145/2591796.2591882](), [acm:2591882](http://dl.acm.org/citation.cfm?id=2591882). 
 
