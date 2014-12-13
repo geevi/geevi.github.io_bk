@@ -65,7 +65,7 @@ Google PhD Fellowship in Algorithms
 #### Internships
 
 - *2010 OCT-DEC*  
-**[Max Plank Institute for Informatics, Saarbrücken, Germany](http://www.mpi-inf.mpg.de/)**    
+*[Max Plank Institute for Informatics, Saarbrücken, Germany](http://www.mpi-inf.mpg.de/)*    
        I worked with Kurt
 Mehlhorn and Vincenczo Bonifaci, on a distributed algorithm for computing shortest paths in a
 graph, inspired by the foraging abilities of the slime mold. A
@@ -75,7 +75,7 @@ that the model converges to the shortest path in the graph and also the rate of
 convergence is exponential for a subclass of graphs. 
 
 - *2008 JUN-AUG*  
-**[Google, Hyderabad](http://www.google.co.in/intl/en/jobs/indialocations/hyderabad/)**       
+*[Google, Hyderabad](http://www.google.co.in/intl/en/jobs/indialocations/hyderabad/)*       
        Development of a generic distributed framework for testing scalability of servers.
 
 #### Academic Projects
