@@ -76,7 +76,7 @@ h5 {
 	letter-spacing: 2px;
 }
 
-em a {
+em a, em a:hover {
 	color: green;
 }
 
