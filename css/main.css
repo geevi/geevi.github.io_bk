@@ -68,6 +68,14 @@ h3 {
 	padding-bottom: 20px;
 }
 
+.gv-large h4 {
+	margin-top: 30px;
+}
+
+.gv-large h5 {
+	margin-top: 20px;
+}
+
 .gv-large p {
 	margin-bottom: 15px;
 	line-height: 150%;
