@@ -66,6 +66,7 @@ h3 {
 
 .gv-large h3 {
 	padding-bottom: 20px;
+	font-weight: 300;
 }
 
 .gv-large h4 {
@@ -85,7 +86,7 @@ h3 {
 
 h4 {
 	margin-top: 20px;
-	font-weight: 300;
+	
 	color: crimson;
 }
 
@@ -146,6 +147,7 @@ body {
 	background: #1976d2;
 	color: white;
 	font-size: 24px;
+	font-weight: 300;
 	height: 80px;
 	line-height: normal;
 	text-decoration: none solid white;
