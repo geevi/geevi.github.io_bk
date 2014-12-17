@@ -65,7 +65,8 @@ h3 {
 }
 
 .gv-large h3 {
-	padding-bottom: 20px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
 	font-weight: 300;
 	border-bottom: gray 1px dotted;
 }
