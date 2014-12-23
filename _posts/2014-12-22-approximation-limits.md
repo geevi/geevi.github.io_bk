@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Approximation and its Limits : Layman's Introduction to Probabilistically Checkable Proofs and Hardness of Approximation"
+title: "Approximation and its Limits : An Introduction to Probabilistically Checkable Proofs and Hardness of Approximation"
 categories: puzzles
 mathjax: enable
 published: true
@@ -9,10 +9,10 @@ published: true
 ### Approximation and its Limits
 <span style="display: block; padding-bottom: 10px; font-size: 18px; text-align: center; font-weight: 300;
 border-bottom: gray 1px dotted;">
-A layman's introduction to probabilistically checkable proofs and hardness of approximation.</span>
+An introduction to probabilistically checkable proofs and hardness of approximation.</span>
 
 
-In the previous <a href="/2014/puzzles.html">blog post</a>, we saw that computers as we know it cannot help in 
+In the previous [blog post](/2014/puzzles.html), we saw that computers as we know it cannot help in 
 solving many puzzles and some of these puzzle need to be solved routinely.
 So should we give up hope? Is there another way out?
 
@@ -29,13 +29,13 @@ a polynomial time algorithm.
 #### 3-SAT
 Now lets consider a problem which has very wide practical application. It
 is called the 3-SAT problem. An instance of the problem has a collection
-of "clauses" 
+of *clauses* 
 
 
-consist of variables
+consist of *variables*
 $x_1,\cdots, x_n$ which takes $0,1$ values. The goal is to find an
 assignment of $0,1$ to the variables, if it exists, such that each of the clauses 
-evaluates to $1$ in Boolean logic. This was the first problem that
+evaluates to $1$ in *[Boolean logic]()*. This was the first problem that
 was proved to be NP-Complete by Cook and Levin.
 
 #### Approximation

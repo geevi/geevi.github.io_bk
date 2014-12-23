@@ -86,6 +86,15 @@ h3 {
 	line-height: 150%;
 }
 
+.subhead {
+	display: block;
+	padding-bottom: 10px; 
+	font-size: 18px; 
+	text-align: center; 
+	font-weight: 300;
+	border-bottom: gray 1px dotted;
+}
+
 
 
 h4 {
@@ -102,7 +111,7 @@ h5 {
 	letter-spacing: 2px;
 }
 
-em a, em a:hover {
+em a, em a:hover, em {
 	color: #4caf50;
 }
 
