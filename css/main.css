@@ -3,15 +3,16 @@ html,body {
 	color: #454545;
 }
 
+
+
 nav {
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
 }
 
-
 .navbar {
-	background: #00bcd4;
+	background: none repeat scroll 0% 0% #2196F3;
 	margin-bottom: 0px;
-	border: 0px;
+	border: 0px none;
 }
 
 .navbar-default .navbar-brand {
@@ -133,7 +134,7 @@ ul {
 
 .gv-large {
 	max-width: 700px;
-	padding: 20px;
+	padding: 10px 20px;
 	display: inline-block;
 	box-sizing: border-box;
 	margin: 10px;
@@ -234,20 +235,20 @@ body {
 }
 
 #Hardness h3 {
-	color: #CD2121;
+	color: #F44336;
 }
 
 #Hardness a {
-	color: #CD2121;
+	color: #F44336;
 }
 
 
 #Hardness .Card-heading {
-	background: #CD2121;
+	background: #F44336;
 }
 
 #Hardness .Card-caption {
-	background: #CD2121;
+	background: #F44336;
 }
 
 
@@ -269,40 +270,40 @@ body {
 
 
 #Bio h3 {
-	color: #0f9d58;
+	color: #8bc34a;
 }
 
 
 #Bio a {
-	color: #0f9d58;
+	color: #8bc34a;
 }
 
 
 #Bio .Card-heading {
-	background: #0f9d58;
+	background: #8bc34a;
 }
 
 #Bio .Card-caption {
-	background: #0f9d58;
+	background: #8bc34a;
 }
 
 
 
 #Streaming h3 {
-	color: #1976d2;
+	color: #00bcd4;
 }
 
 #Streaming a {
-	color: #1976d2;
+	color: #00bcd4;
 }
 
 
 #Streaming .Card-heading {
-	background: #1976d2;
+	background: #00bcd4;
 }
 
 #Streaming .Card-caption {
-	background:#1976d2;
+	background: #00bcd4;
 }
 
 #Streaming {
