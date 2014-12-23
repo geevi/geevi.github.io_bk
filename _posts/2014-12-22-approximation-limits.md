@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Approximation and its Limits : Layman's Introduction to Probabilistically Checkable Proofs and Hardness of Approximation"
-date: {}
 categories: puzzles
 mathjax: enable
 published: true

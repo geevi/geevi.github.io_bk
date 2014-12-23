@@ -334,19 +334,13 @@ body {
 	padding-top: 60px;
 }
 
-blockqoute {
+blockquote {
 display: block;
 font-size: 18px;
 text-align: left;
 font-weight: 300;
 padding: 10px;
 margin: 10px;
-border-style: none none dotted dotted;
-border-color: -moz-use-text-color -moz-use-text-color #808080 #808080;
--moz-border-top-colors: none;
--moz-border-right-colors: none;
--moz-border-bottom-colors: none;
--moz-border-left-colors: none;
-border-image: none;
-border-width: 0px 0px 0px 1px;
+border-left: 1px dotted #808080;
+
 }
