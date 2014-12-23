@@ -1,2 +1,2 @@
-Use Jekyll.
+Use Jekyll to generate the site.
 
