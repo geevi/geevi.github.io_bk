@@ -59,7 +59,7 @@ h3 {
 	padding: 5px;
 	
 	margin: 0;
-	color: #ae2525;
+	color: #F44336;
 	font-size: 34px;
 	line-height: 40px;
 	text-align: center;
@@ -91,7 +91,7 @@ h3 {
 h4 {
 	margin-top: 20px;
 	
-	color: crimson;
+	color: #F44336;
 }
 
 h5 {
@@ -103,7 +103,7 @@ h5 {
 }
 
 em a, em a:hover {
-	color: green;
+	color: #4caf50;
 }
 
 ul {
@@ -270,21 +270,21 @@ body {
 
 
 #Bio h3 {
-	color: #8bc34a;
+	color: #4caf50;
 }
 
 
 #Bio a {
-	color: #8bc34a;
+	color: #4caf50;
 }
 
 
 #Bio .Card-heading {
-	background: #8bc34a;
+	background: #4caf50;
 }
 
 #Bio .Card-caption {
-	background: #8bc34a;
+	background: #4caf50;
 }
 
 
@@ -334,3 +334,19 @@ body {
 	padding-top: 60px;
 }
 
+blockqoute {
+display: block;
+font-size: 18px;
+text-align: left;
+font-weight: 300;
+padding: 10px;
+margin: 10px;
+border-style: none none dotted dotted;
+border-color: -moz-use-text-color -moz-use-text-color #808080 #808080;
+-moz-border-top-colors: none;
+-moz-border-right-colors: none;
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+border-image: none;
+border-width: 0px 0px 0px 1px;
+}
