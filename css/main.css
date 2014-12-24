@@ -130,6 +130,17 @@ ul {
 	box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
 }
 
+.gv-blog {
+	width: 300px;
+	display: inline-block;
+	box-sizing: border-box;
+	margin: 10px;
+	border-radius: 2px;
+	float: left;
+	position: relative;
+
+}
+
 .gv-small {
 	width: 300px;
 	height: 570px;
@@ -156,6 +167,16 @@ body {
 	background: #F4F4F4;
 }
 
+.gv-blog .subhead {
+	font-size: 14px;
+	text-align: left;
+	border: 0;
+}
+
+.gv-blog .Card-heading {
+	height: 120px;
+	border: 0;
+}
 
 .Card-heading {
 	width: 300px;
@@ -319,6 +340,31 @@ body {
 	margin-bottom: 20px;
 }
 
+
+#Blog .Card-heading {
+	background: #78909C;
+}
+
+
+#Blog .Card-caption {
+	background: #78909C;
+}
+
+#Blog .Card-heading a {
+	color: #ffffff;
+}
+
+
+#Blog a {
+	color: #78909C;
+}
+
+
+#Blog h3 {
+	color: #78909C;
+}
+
+
 @media (max-width: 350px) {
   .Field-container {
     padding: 10px 0px;
@@ -352,4 +398,8 @@ padding: 10px;
 margin: 10px;
 border-left: 1px dotted #808080;
 
+}
+
+.gv-large blockquote p {
+	margin: 0px;
 }
