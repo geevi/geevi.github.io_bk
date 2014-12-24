@@ -29,7 +29,10 @@ a polynomial time algorithm.
 #### 3-SAT
 Now lets consider a problem which has very wide practical application. It
 is called the 3-SAT problem. An instance of the problem has a collection
-of *clauses* 
+of *clauses*,
+
+<p style="text-align:center">
+<img src="../../images/3sat.jpg" width="600px" style="margin: 10px 20px"/> </p>
 
 
 consist of *variables*
