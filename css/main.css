@@ -342,12 +342,13 @@ body {
 
 
 #Blog .Card-heading {
-	background: #78909C;
+	background: #607D8B
+;
 }
 
 
 #Blog .Card-caption {
-	background: #78909C;
+	background: #607D8B;
 }
 
 #Blog .Card-heading a {
@@ -356,12 +357,12 @@ body {
 
 
 #Blog a {
-	color: #78909C;
+	color: #607D8B;
 }
 
 
 #Blog h3 {
-	color: #78909C;
+	color: #607D8B;
 }
 
 
