@@ -6,16 +6,50 @@ mathjax: enable
 published: true
 ---
 
+### Hardness of Coloring
+
+This is the third part, of a series of <a href="/2014/puzzles.html">blog</a> <a href="/2014/approximation-limits.html">posts</a>,
+on the impossibility of finding efficient algorithms for certain problems.
+
+In the <a href="/2014/puzzles.html">first</a>, we saw that for sudoku and many other puzzles, there is a single explanation for
+our inability to find polynomial time algorithms. The explanation is that any one problem (say sudoku) that is
+NP-Complete does not have a polynomial time algorithm. This is commonly known as the P $\neq$ NP assumption. 
+If assuming this, a certain problem  does not have a polynomial time algorithm, then we say that it is *hard*.
+When a problem has polynomial time algorithms, we say it is *easy*.
+
+In the <a href="/2014/approximation-limits.html">second post</a>, we saw that for the $3$-SAT problem, even a relaxed version of the problem, of getting an
+approximation factor better than $7/8$, is hard. We also saw a very silly polynomial time algorithm, which gives a $7/8$ approximation
+factor. Such pair of results are called *optimal*, since we know the exactly value of the approximation factor below which the problem is easy and above which the problem is hard.
+
+
+The purpose of this post is to explain some
+recent developments in the hardness results for a particular problem called coloring (to which I have contributed).
+It is a very common problem, for which we do not have optimal results yet. 
 
 #### Graph Coloring
+
+
+<p style="text-align:center">
+<img src="../../images/highlight/graph_coloring.png" width="300px" style="margin: 10px 20px"/> </p>
+
+A *graph* is an object like the uncolored figure above. It consists of a set of *vertices*, which are the round things and a set of
+*edges*, which are the lines connecting the round things. The colored figure above is a *$3$-coloring* of the graph on the left, 
+because for every edge, the vertices at the end points have different color and only $3$ colors (red, blue and green) are used.
+
+The graph coloring problem is, when given a graph (an arbitrary figure like the one on the left), find a *coloring* (assignment of 
+colors to the vertices, such that the end points of every edge has different colors), using the least number of colors. In particular,
+we will be looking at the following question:
+
 *Given a $3$-colorable graph, can you find a $C$-coloring?*
 
- Current best is $C = n^{0.199\cdots}$.  Known that finding a $4$-coloring  is NP-hard. 
- 
-*Where does the transition from easy to hard happen?*
+The best polynomial time algorithms known for this problem, only guarantee $C = n^{0.199\cdots}$, where $n$ is the number of vertices. It is known 
+that finding a $4$-coloring  is *hard*.  We want to know where exactly between $n^{0.199\cdots}$ and $4$, the transition from easy to hard
+happens.
 
 ##### Khot's Unique Games Conjecture (UGC)
-Khot observed that *PCP with $2$ random queries and unique checks $\Rightarrow$ more  hardness of approximation results.*
+Khot observed that 
+
+*PCP with $2$ random queries and unique checks $\Rightarrow$ more  hardness of approximation results.*
 
  
 ##### Our Results
