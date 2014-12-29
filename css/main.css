@@ -336,19 +336,15 @@ body {
 	background: #00bcd4;
 }
 
-#Streaming {
-	margin-bottom: 20px;
-}
 
 
 #Blog .Card-heading {
-	background: #607D8B
-;
+	background: #6CA5BE;
 }
 
 
 #Blog .Card-caption {
-	background: #607D8B;
+	background: #6CA5BE;
 }
 
 #Blog .Card-heading a {
@@ -357,7 +353,7 @@ body {
 
 
 #Blog a {
-	color: #607D8B;
+	color: #6CA5BE;
 }
 
 
@@ -403,4 +399,15 @@ border-left: 1px dotted #808080;
 
 .gv-large blockquote p {
 	margin: 0px;
+}
+
+#footer {
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	color: 
+}	
+
+.card strong {
+color: rgb(102, 102, 102);
 }

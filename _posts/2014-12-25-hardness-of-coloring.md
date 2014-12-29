@@ -12,10 +12,10 @@ This is the third part, of a series of <a href="/2014/puzzles.html">blog</a> <a 
 on the impossibility of finding efficient algorithms for certain problems.
 
 In the <a href="/2014/puzzles.html">first</a>, we saw that for sudoku and many other puzzles, there is a single explanation for
-our inability to find polynomial time algorithms. The explanation is that any one problem (say sudoku) that is
-NP-Complete does not have a polynomial time algorithm. This is commonly known as the P $\neq$ NP assumption. 
+our inability to find polynomial time algorithms. The explanation is that, any one problem (say sudoku) that is
+NP-Complete, does not have a polynomial time algorithm. This is commonly known as the P $\neq$ NP assumption. 
 If assuming this, a certain problem  does not have a polynomial time algorithm, then we say that it is *hard*.
-When a problem has polynomial time algorithms, we say it is *easy*.
+When a problem has a polynomial time algorithm, we say it is *easy*.
 
 In the <a href="/2014/approximation-limits.html">second post</a>, we saw that for the $3$-SAT problem, even a relaxed version of the problem, of getting an
 approximation factor better than $7/8$, is hard. We also saw a very silly polynomial time algorithm, which gives a $7/8$ approximation
@@ -42,12 +42,12 @@ we will be looking at the following question:
 
 *Given a $3$-colorable graph, can you find a $C$-coloring?*
 
-The best polynomial time algorithms known for this problem, only guarantee $C = n^{0.199\cdots}$, where $n$ is the number of vertices. It is known 
+The best polynomial time algorithm known for this problem, only guarantee $C = n^{0.199\cdots}$, where $n$ is the number of vertices. It is known 
 that finding a $4$-coloring  is *hard*.  We want to know where exactly between $n^{0.199\cdots}$ and $4$, the transition from easy to hard
 happens.
 
 ##### Khot's Unique Games Conjecture (UGC)
-Khot observed that PCP with $2$ random queries and unique checks $\Rightarrow$ more  hardness of approximation results.
+Khot observed that PCP with $2$ random queries and unique checks, will imply more  hardness of approximation results.
 
  
 ##### Our Results
@@ -80,7 +80,7 @@ In <a href="http://arxiv.org/abs/1311.7407">joint work</a> with Venkat Guruswami
 Johan Hastad, Prahladh Harsha and Srikanth Srinivasan, we show $C > > poly(\log n)$ is also hard.
 Subsequent to our work, Khot and
 Saket  showed $C=2^{(\log
-n)^{1/19}}$ is hard~\cite{KhotS2014b}. Though their result was
+n)^{1/19}}$ is hard. Though their result was
 for $12$-uniform hypergraphs. 
 I further observed that
 by combining their methods with ours, the same  hardness can be
@@ -109,7 +109,7 @@ assignments such that every edge is covered by one of the assignments.
 $\{0,1\}^r \setminus \{ \overline 0, \overline 1\}$ iff it is
 $2^C$-colorable. 
 
-Some predicates like \TSAT\ which has an
+Some predicates like $3$-SAT which has an
 *oddness* property (for every $x\in \{0,1\}^r, x\in P \vee \bar x \in P$). Then $C=2$ is easy, since any assignment and its complement
 covers the instance.
 

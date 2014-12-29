@@ -70,7 +70,7 @@ The algorithm above is very trivial. We might think that there may be an algorit
  which, by cleverly looking at the clauses in a satisfiable problem instance, finds an assignment
  that satisfies more than a $7/8$ fraction of the clauses. 
 
->However in 1998, Hastad proved that if there is a polynomial time algorithm with
+>However in 1998, Hastad <a href="http://dl.acm.org/citation.cfm?id=502098&dl=ACM&coll=DL&CFID=468122525&CFTOKEN=86867583">proved</a> that if there is a polynomial time algorithm with
 factor better than $7/8$, then NP-Complete problems have polynomial time
 solutions. This not expected to happen. Hence that trivial algorithm 
 cannot be improved.
@@ -90,6 +90,7 @@ to be completely sure.
 >A probabilistically checkable proof (PCP) is a way of writing proofs,
 such that it can be checked by making a few random queries in to the proof.
 
+PCP was discovered by Feige, Goldwasser, Lund, Safra, and Szegedy (1991), and Arora and Safra (1992).
 Hastad's result mentioned previously, showed that for any puzzle that is NP-Complete, 
 we can convert an instance of that puzzle to a $3$-SAT instance such that:
 
