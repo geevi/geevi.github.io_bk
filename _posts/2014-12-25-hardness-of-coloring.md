@@ -30,7 +30,7 @@ It is a very common problem, for which we do not have optimal results yet.
 
 
 <p style="text-align:center">
-<img src="../../images/highlight/graph_coloring.png" width="300px" style="margin: 10px 20px"/> </p>
+<img src="../../images/highlight/graph_coloring.png" width="300px" /> </p>
 
 A *graph* is an object like the uncolored figure above. It consists of a set of *vertices*, which are the round things and a set of
 *edges*, which are the lines connecting the round things. The colored figure above is a *$3$-coloring* of the graph on the left, 
