@@ -362,6 +362,12 @@ body {
 	color: #607D8B;
 }
 
+@media (max-width: 500px) {
+	img {
+		width: 150px;
+	}
+}
+
 
 @media (max-width: 350px) {
   .Field-container {
