@@ -32,7 +32,7 @@ is called the $3$-SAT problem. An instance of the problem has a collection
 of *clauses* $C_1,\cdots,C_m$ of the following form. 
 
 <p style="text-align:center">
-<img src="../../images/3SAT.png" width="600px" style="margin: 10px 20px"/> </p>
+<img src="../../images/3SAT.png" width="600px" /> </p>
 
 Here $x_1,\cdots, x_n$ are *variables* which takes  $0,1$ values. Here $\neg x_3$ is to be 
 read as NOT of $x_3$, which is the value of $1- x_3$ and $\vee$ is the OR.
