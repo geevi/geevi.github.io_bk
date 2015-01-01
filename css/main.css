@@ -364,7 +364,7 @@ body {
 
 @media (max-width: 500px) {
 	img {
-		width: 150px;
+		max-width: 300px;
 	}
 }
 
