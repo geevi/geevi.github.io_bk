@@ -55,11 +55,6 @@ border-color: #2196F3;
 border: 0px;
 }
 
-a:active {
-
-border-bottom: 3px solid yellow;
-}
-
 
 .Field-container {
 	display: inline-block;
@@ -438,3 +433,9 @@ border-left: 1px dotted #808080;
 .card strong {
 color: rgb(102, 102, 102);
 }
+
+a:active {
+
+border-bottom: 2px solid yellow;
+}
+
