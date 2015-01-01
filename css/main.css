@@ -38,6 +38,10 @@ color: white;
 color: #FFFC00;
 }
 
+.navbar-default .navbar-brand:hover {
+color: #FFFC00;
+}
+
 .navbar-default .navbar-toggle {
 border-color: #2196F3;
 }
