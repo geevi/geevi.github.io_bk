@@ -22,7 +22,9 @@ nav {
 }
 
 .navbar-default .navbar-brand {
-color: white;
+	color: white;
+	font-weight: 500;
+
 }
 
 
