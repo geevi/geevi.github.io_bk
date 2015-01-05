@@ -72,7 +72,7 @@ The algorithm above is very trivial. We might think that there may be an algorit
 
 >However in 1998, Hastad <a href="http://dl.acm.org/citation.cfm?id=502098&dl=ACM&coll=DL&CFID=468122525&CFTOKEN=86867583">proved</a> that if there is a polynomial time algorithm with
 factor better than $7/8$, then NP-Complete problems have polynomial time
-solutions. This not expected to happen. Hence that trivial algorithm 
+solutions. This is not expected to happen. Hence that trivial algorithm 
 cannot be improved.
 
 Hastad proved similar results for many other problems. For every problem there is a magic constant
