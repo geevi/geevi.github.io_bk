@@ -54,7 +54,7 @@ Khot observed that PCP with $2$ random queries and unique checks, will imply mor
 
 >In <a href="http://arxiv.org/abs/1411.3517">joint work</a> with Irit Dinur, Prahladh Harsha, Srikanth Srinivasan, 
 we showed that assuming a version of UGC, $C=2^{poly(\log \log n)}$ is hard, an improvement over $C=poly(\log \log n)$ 
-hardness result of Dinur and Shinkar.
+hardness result of Dinur and Shinkar, using similar assumption.
 
 **Puzzle:** $N$ switches each of which can take $3$ positions, control a bulb which glows as red, blue and green. 
 Changing the position of all the switches changes the color of the bulb. Show that the bulb is controlled
