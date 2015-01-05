@@ -67,6 +67,9 @@ We show that even if the switches where not allowed to move independently, such 
 
 #### Hypergraph Coloring
 
+<p style="text-align:center">
+<img src="../../images/highlight/hypergraph_coloring.png" width="300px" /> </p>
+
 **$r$-Uniform Hypergraph:** A vertex set $V$ and a
 collection of subsets of $V$ of size $r$. Assign colors to 
 vertices such that no set is monochromatic.Graphs corresponds to the 
