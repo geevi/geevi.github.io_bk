@@ -19,7 +19,7 @@ When a problem has a polynomial time algorithm, we say it is *easy*.
 
 In the <a href="/2014/approximation-limits.html">second post</a>, we saw that for the $3$-SAT problem, even a relaxed version of the problem, of getting an
 approximation factor better than $7/8$, is hard. We also saw a very silly polynomial time algorithm, which gives a $7/8$ approximation
-factor. Such pair of results are called *optimal*, since we know the exactly value of the approximation factor below which the problem is easy and above which the problem is hard.
+factor. Such pair of results are called *optimal*, since we know the exact value of the approximation factor below which the problem is easy and above which the problem is hard.
 
 
 The purpose of this post is to explain some
