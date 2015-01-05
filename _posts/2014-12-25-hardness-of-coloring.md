@@ -40,7 +40,7 @@ The graph coloring problem is, when given a graph (an arbitrary figure like the 
 colors to the vertices, such that the end points of every edge has different colors), using the least number of colors. In particular,
 we will be looking at the following question:
 
-*Given a $3$-colorable graph, can you find a $C$-coloring?*
+**Given a $3$-colorable graph, can you find a $C$-coloring?**
 
 The best polynomial time algorithm known for this problem, only guarantee $C = n^{0.199\cdots}$, where $n$ is the number of vertices. It is known 
 that finding a $4$-coloring  is *hard*.  We want to know where exactly between $n^{0.199\cdots}$ and $4$, the transition from easy to hard
