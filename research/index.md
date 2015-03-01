@@ -18,6 +18,8 @@ Hardness of approximation, analysis of Boolean functions, communication complexi
   
 ##### Conference
 
+- Amey Bhangale, Prahladh Harsha & Girish Varma. *[A characterization of hard-to-cover CSPs.](http://arxiv.org/abs/1411.7747)* To appear in Computational Complexity Conference 2015.  
+
 - Irit Dinur, Prahladh Harsha, Srikanth Srinivasan & Girish Varma. *[Derandomized graph product results using the low degree long code.](http://arxiv.org/1411.3517)* To appear in Symp. on Theoretical Aspects of Computer Science 2015.  
 
 - Venkat Guruswami, Prahladh Harsha, Johan Hastad, Srikanth Srinivasan & Girish Varma. *[Super-polylogarithmic hypergraph coloring hardness via low-degree long codes.](http://arxiv.org/abs/1311.7407)* In Proc. 46th ACM Symp. on Theory of Computing (STOC), pages 614–623. 2014. [doi:10.1145/2591796.2591882](), [acm:2591882](http://dl.acm.org/citation.cfm?id=2591882). 
@@ -29,8 +31,6 @@ Lecture Notes in Computer Science, pages 94-104, 2010.  [doi:10.1007/978-3-642-1
 
 
 ##### Manuscripts
-
-- Amey Bhangale, Prahladh Harsha & Girish Varma. *[A characterization of hard-to-cover CSPs.](http://arxiv.org/abs/1411.7747)*
 
 - Girish Varma. *[Reducing uniformity in Khot-Saket hypergraph coloring hardness reductions.](http://arxiv.org/abs/1408.0262)*
 
