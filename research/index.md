@@ -31,6 +31,7 @@ Lecture Notes in Computer Science, pages 94-104, 2010.  [doi:10.1007/978-3-642-1
 
 
 ##### Manuscripts
+- Amey Bhangale, Ramprasad Saptharishi, Girish Varma & Rakesh Venkat. *[On Fortification of General Games.](http://eccc.hpi-web.de/report/2015/069/)*
 
 - Girish Varma. *[Reducing uniformity in Khot-Saket hypergraph coloring hardness reductions.](http://arxiv.org/abs/1408.0262)*
 
