@@ -19,7 +19,7 @@ Hardness of approximation, analysis of Boolean functions, communication complexi
 ##### Conference
 
 - Amey Bhangale, Ramprasad Saptharishi, Girish Varma & Rakesh Venkat. *[On Fortification of Projection Games.](http://eccc.hpi-web.de/report/2015/069/)*. To appear in RANDOM 2015.  
-- 
+
 - Amey Bhangale, Prahladh Harsha & Girish Varma. *[A characterization of hard-to-cover CSPs.](http://arxiv.org/abs/1411.7747)* To appear in Computational Complexity Conference 2015.  
 
 - Irit Dinur, Prahladh Harsha, Srikanth Srinivasan & Girish Varma. *[Derandomized graph product results using the low degree long code.](http://arxiv.org/1411.3517)* To appear in Symp. on Theoretical Aspects of Computer Science 2015.  
