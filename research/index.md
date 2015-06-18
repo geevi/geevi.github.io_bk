@@ -17,6 +17,7 @@ Hardness of approximation, analysis of Boolean functions, communication complexi
 - Ajesh Babu, Nutan Limaye, Jaikumar Radhakrishnan & Girish Varma. *[Streaming algorithms for language recognition problems.](http://arxiv.org/abs/1104.0848)*, In Theoretical Computer Science, Volume 494, 8 July 2013, Pages 13-23. [doi:10.1016/j.tcs.2012.12.028](). Invited to special issue of TAMC 2010.
   
 ##### Conference
+
 - Amey Bhangale, Ramprasad Saptharishi, Girish Varma & Rakesh Venkat. *[On Fortification of Projection Games.](http://eccc.hpi-web.de/report/2015/069/)*. To appear in RANDOM 2015.  
 - 
 - Amey Bhangale, Prahladh Harsha & Girish Varma. *[A characterization of hard-to-cover CSPs.](http://arxiv.org/abs/1411.7747)* To appear in Computational Complexity Conference 2015.  
@@ -32,7 +33,6 @@ Lecture Notes in Computer Science, pages 94-104, 2010.  [doi:10.1007/978-3-642-1
 
 
 ##### Manuscripts
-
 
 - Girish Varma. *[Reducing uniformity in Khot-Saket hypergraph coloring hardness reductions.](http://arxiv.org/abs/1408.0262)*
 
