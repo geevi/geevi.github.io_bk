@@ -378,12 +378,59 @@ body {
 	color: #607D8B;
 }
 
+#Contact {
+	width: 100%
+}
+
+#Contact h3 {
+ padding-left: 0px;
+}
+
+.contact {
+	max-width: 700px; 
+	margin: 20px 100px;
+	min-height: 300px;
+}
+
+.contact .text-cont {
+padding: 20px;
+
+}
+
+
+.contact-pic {
+width: 249px; height: 300px; float: right;
+}
+
+.contact-pic img {
+	max-width: 249px;
+	max-height: 300px;
+	margin: auto;
+}
+
+@media (max-width: 800px) {
+  .contact-pic {
+  float: none
+  }
+  
+  
+.contact {
+	max-width: 700px; 
+	margin: 20px 0px;
+	min-height: 300px;
+}	
+  
+
+}
+
 @media (max-width: 500px) {
 	img {
 		max-width: 300px;
 		padding:10px 0px;
 		margin:0;
 	}
+
+
 }
 
 
@@ -397,6 +444,7 @@ body {
    .body {
   	padding: 0px;
   }
+  
  
 }
 
