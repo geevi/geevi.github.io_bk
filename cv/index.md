@@ -5,11 +5,6 @@ title: "CV"
 
 ### Girish Varma
 
-A219, STCS, Tata Institute of Fundamental Research,  
-Colaba, Mumbai - 400005, Maharashtra, India  
-Mobile : +91-9769335204    
-Email : girishrv@tifr.res.in   
-Homepage : [http://geevi.github.io](http://geevi.github.io)
 
 #### Education
 
