@@ -22,47 +22,53 @@ The lecture is mainly for clearing doubts and covering the most confusing parts.
 
 #### Lectures
 
-1.  **Problems and Algorithms** \\
-    Recalling some algorithms, complexity notations. Descision Problems. Polynomial Time. TSP Hardness Assumption\\
-    *Readings :  Papadimitriou Chapter 1*
+1.  **Introduction** \\
+    Some basic questions. Desision Problems. Turing Machines. Efficient Computation.\\
+    *Readings :  Papadimitriou Chapters 1,2*
 
-2.  **Turing Machines** \\
-    *Readings :  Papadimitriou Chapter 2*
+2.  **Undecidability & Hierachy Theorems** \\
+    *Readings :  Papadimitriou Chapters 3,7*
 
-3.  **Computability** \\
-    *Readings :  Papadimitriou Chapter 3*
+3.  **Search Problems, Nondeterminism, NP and Reductions** \\
+    *Readings :  Papadimitriou Chapters 8*
 
-4.  **Complexity Classes and their Relationships** \\
-    *Readings :  Papadimitriou Chapter 7*
-
-5.  **Reductions and Completeness** \\
-    *Readings :  Papadimitriou Chapter 8*
-
-6.  **NP-Complete Problems** \\
-    *Readings :  Papadimitriou Chapter 9*
-
-7.  **coNP and function Problems** \\
+4.  **coNP, NP-Completenesss & Cooks Theorem** \\
     *Readings :  Papadimitriou Chapter 10*
 
-8.  **Randomized Computation** \\
+5.  **NL, Savitch's Theorem, Immerman-Szelepcsenyi Theorem** \\
+    *Readings :  Papadimitriou Chapter 16*
+
+6.  **Randomized Computation and Polynomial Identity Testing** \\
+    *Readings :  Papadimitriou Chapter 11*
+
+7.  **Circuit Complexity and Adleman's Theorem** \\
     *Readings :  Papadimitriou Chapter 11*
 
 9.  **Cryptography** \\
     *Readings :  Papadimitriou Chapter 12*
 
-10.  **Parallel Computation** \\
+8.  **Parrallel Computation** \\
     *Readings :  Papadimitriou Chapter 15*
 
-11. **Logarithamic Space**\\
-    *Readings :  Papadimitriou Chapter 16*
+10.  **Property Testing** 
+    
+11. **PAC Learning**
 
-12. **Sublinear Time and Property Testing**
+12. **Communication Complexity**
 
-13. **Communication Complexity**
 
 #### Grading
 
+This part of the course will have a total of 50 marks + 5 bonus marks.
 
+- 25 marks for the end sem.
+- 15 marks for the mid sem.
+- 10 marks for assignments.
+- 5 marks for quiz.
+
+2-3 question will be given out at the end of every lecture. There will be one tutorial 
+session per week (to be scheduled), where the assignments for the previous week will be collected, and 
+solutions will be discussed.
 
 
 #### Textbook and References
