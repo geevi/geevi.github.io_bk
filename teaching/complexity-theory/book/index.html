@@ -1,0 +1,301 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="description" content="A Short Course on Complexity Theory">
+
+<title>A Short Course on Complexity Theory</title>
+<link rel="stylesheet" href="style.css">
+
+
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 0,
+ 'sections': [('Table of contents',
+               0,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Introduction', 0, None, '___sec0'),
+              ('Decision Problems', 1, None, '___sec1'),
+              ('Turing Machines', 1, None, '___sec2'),
+              ('Robustness of TM', 2, None, '___sec3'),
+              ('Efficient Algorithms', 1, None, '___sec4'),
+              ('Undecidability', 0, None, '___sec5'),
+              ('Deciding a Langauge/Problem', 1, None, '___sec6'),
+              ('Universal Turing Machines', 1, None, '___sec7'),
+              ('Halting Problem', 1, None, '___sec8'),
+              ('Heirarchy Theorems', 1, None, '___sec9')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "AMS"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+    
+<!-- ------------------- main content ---------------------- -->
+
+
+
+<center><h1>A Short Course on Complexity Theory</h1></center>  <!-- document title -->
+
+<p>
+<!-- author(s): Girish Varma EMAIL: girish.varma@iiit.ac.in -->
+
+<center>
+<b>Girish Varma EMAIL: girish.varma@iiit.ac.in</b> 
+</center>
+
+<p>
+<!-- institution -->
+
+<center><b>Machine Learning Lab, IIIT Hyderabad</b></center>
+<br>
+<p>
+<center><h4>Sep 19, 2017</h4></center> <!-- date -->
+<br>
+
+<h1 id="table_of_contents">Table of contents</h2>
+
+<p>
+<a href="#___sec0"> Introduction </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec1"> Decision Problems </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec2"> Turing Machines </a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="#___sec3"> Robustness of TM </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec4"> Efficient Algorithms </a><br>
+<a href="#___sec5"> Undecidability </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec6"> Deciding a Langauge/Problem </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec7"> Universal Turing Machines </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec8"> Halting Problem </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec9"> Heirarchy Theorems </a><br>
+</p>
+<p>
+
+<center><h1 id="___sec0">Introduction </h1></center> <hr>
+
+<p>
+You have seen algorithms for a variety of problems. This begs the question
+of <em>whether there is an algorithm for any  given a problem?</em>. 
+Furthermore <em>is there an efficient 
+algorithm for all problems?</em>. Even if you have an algorithm for the problem, 
+<em>can it be made more efficient?</em>. This course will be addressing these 
+questions. For answering these questions, we first need to define:
+
+<ol>
+   <li> What is a <em>problem</em>?</li>
+   <li> What is computer/programing language, where you can execute/write 
+      the algorithms?</li>
+   <li> What do you mean by <em>efficient</em>?</li>
+</ol>
+
+We will start with very simplified definitions for these questions and 
+try to find the answers for this setting.
+
+<h1 id="___sec1">Decision Problems </h1>
+
+<p>
+Typically the output of an algorithm could be a graph, a number etc. 
+But we will consider only problems with an YES or NO answer. Furthermore,
+we will define the problem to be just the set of all YES-instances. 
+You are familiar with this definition from your automata theory class. 
+For example take the REACHABILITY problem where the input is \( (G(V,E), s,t) \)
+where \( s,t \in V \), and the problem is whether there is a path from \( s \) to 
+\( t \). So we will define the problem itself as the set of instances \( (G,s,t) \)
+where a path exists.
+
+$$
+\mbox{REACHABILITY} = \{ (G,s,t) : \mbox{ there is a path in $G$ from } s \mbox{ to } t \}
+$$
+
+<p>
+The number of instances of graphs having a particular number of vertices \( n \) 
+is finite. But the set of all instances is the union of such instances with
+\( n=1 \) to \( \infty \). Hence each instance has a <em>size</em> \( n \) which is the 
+number of vertices in the graph. Size of an instance is a fundamental concept,
+and we will be defining it for all the instances. Later we will see, that size
+plays an important role in defining what we mean by an efficient algorithm.
+
+<p>
+It was easy to define REACHABILITY because the original problem had an YES or
+NO answer. But can we write problems for which the outputs are numbers, as 
+decision problems? Lets consider the the problem of finding the <em>chromatic 
+number</em> of a graph. Chromatic number of a graph \( G \) is the minimum number of
+distinct colors required to color a graph such that for every edge, end points
+are of different colors. Note that for a graph on \( n \) vertices, the chromatic number is \( \leq n \).
+
+<p>
+The descision version of the chromatic number problem  takes the graph \( G \) and a number \( k \) between \( 1 \) and \( n \) as input. The output is YES, if the chromatic number is \( \leq K \). So 
+
+$$
+\text{CHROMATIC-NUMBER} = \{ (G,k) : \text{ chromatic number of graph } G \text{ is } \leq k \}
+$$
+
+<p>
+Suppose you have an algorithm that takes \( T(n) \) steps for deciding the CHROMATIC-NUMBER problem, 
+you can find the chromatic number also. For this we will create \( n \) instances of CHROMATIC-NUMBER
+from the input graphs, setting \( k=1 \) to \( n \). Note that these instances will transition from NO-instances
+to YES-instance and remain YES-instances. The chromatic number is the least \( k \) for which the instance
+is an YES-instance. Hence you have algorithm which takes \( n\times T(n) \) steps for finding the exact 
+chromatic number.
+
+<p>
+ <div class='problem'>
+                <b>Problem 1: </b> Can you find a algorithm, which takes \( (\log n) T(n) \) steps?
+
+<p>
+</div>
+
+<h1 id="___sec2">Turing Machines </h1>
+
+<p>
+The simplfied model for computer/programming language will be the Turning Machine (TM).
+The Turing Machine has many tapes (which is similar to the hard disk in 
+a modern computer) and a limited set of states (which is similar to the RAM or the cache).
+There is a read-only input tape, where the input is written and a write-only output
+tape where the output is expected when machine is finished. There is also multiple
+work tapes, which can be used for storing intermediate results in the computation.
+The work tapes are assumed to be of infinite length. This is needed because as 
+the size of the input instances becomes larger, the intermediate memory also needs to 
+be large. The set of states of the TM is fixed and does not change with input size.
+
+<p>
+The input is assumed to be a string from a finite alphabet \( \Sigma \). A tape cell
+can store an additional blank symbol indicating that it is unused.
+
+<p>
+The algorithm is implemented in a TM by means of a state function. The state
+function takes as arguments:
+
+<ol>
+   <li> the symbol under the heads of the TM in each of the tapes,</li> 
+   <li> well as the current state</li> 
+</ol>
+
+and returns 
+
+<ol>
+   <li> the next state</li>
+   <li> the symbols to be written under each of the work tape heads</li>
+   <li> the directions to move each of the heads one cell to the left, right or not move.</li>
+</ol>
+
+Now we define a TM using mathematical notation. \( \Sigma \) is the alphabet 
+in which input and work tape is written (for eg. binary ie. \( \Sigma = \{0,1\} \)). 
+The blank symbol for unwritten tape cell is \( \_ \). 
+Let \( \Omega \) be the set of states of the TM. There are 2 special states of the
+TM called \( \omega_{\text{start}} \) and \( \omega_{\text{stop}} \) called the start
+and the stop states. The state transition function is denoted by 
+$$
+\delta : \Omega \times \Sigma \cup \{ \_ \} \rightarrow \Omega \times \Sigma^k \times \{ < , > , - \}^{k+2}
+$$
+
+<p>
+Now lets see an example of a TM for solving the following problem:
+$$
+PALINDROMES = \{ x \in \{0,1\}^n : x \text{ is a palindrome}\}
+$$
+
+<p>
+First lets try to write a pseudo code for a TM solving the problem:
+
+<ol>
+   <li> Copy the input in to the second tape</li> 
+   <li> Move the head in the input tape to end and second tape to begining</li>
+   <li> Compare each bit by moving the input head from end to beggining and second head from beggining to end</li>
+   <li> If any bit is different reject</li>
+   <li> If all bits match accept</li>
+</ol>
+
+We will use a turing machine simulator for implementing this. 
+See the example : <a href="http://turingmachinesimulator.com/shared/oihvkhvacu" target="_self"><tt>http://turingmachinesimulator.com/shared/oihvkhvacu</tt></a>
+
+<p>
+Note that it is extremely tedious to write algorithms as a TM. Neverthless, all the 
+algorithms can be written as TM.
+ <div class='problem'>
+                <b>Problem 2: </b> Design a TM which decides the language :
+$$
+DIV5 = \{ x \in \{0,1\}^n : x \text{ is binary number divisible by } 5\}
+$$
+
+<p>
+Write the program first as a pseudo code and then in the format in <a href="https://turingmachinesimulator.com/." target="_self"><tt>https://turingmachinesimulator.com/.</tt></a>
+
+<p>
+</div>
+
+<h2 id="___sec3">Robustness of TM </h2>
+
+<p>
+Convert \( k \) tape TMs to single tape TMs.
+
+<p>
+Convert alphabet from any \( \Sigma \) to binary.
+
+<h1 id="___sec4">Efficient Algorithms </h1>
+
+<p>
+Recall asymptotic notation
+
+<p>
+REACHABILITY  example
+
+<p>
+Polynomial time algorithms
+
+<p>
+3Coloring example and Exponential Time
+
+<p>
+TSP
+
+<p>
+
+<center><h1 id="___sec5">Undecidability </h1></center> <hr>
+
+<h1 id="___sec6">Deciding a Langauge/Problem </h1>
+
+<p>
+Deciding
+
+<p>
+Recursive Enumerable
+
+<h1 id="___sec7">Universal Turing Machines </h1>
+
+<h1 id="___sec8">Halting Problem </h1>
+
+<h1 id="___sec9">Heirarchy Theorems </h1>
+
+<!-- ------------------- end of main content --------------- -->
+
+
+<center style="font-size:80%">
+<!-- copyright --> &copy; 2017-2017, Girish Varma EMAIL: girish.varma@iiit.ac.in
+</center>
+
+
+</body>
+</html>
+    
+
