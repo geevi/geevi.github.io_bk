@@ -19,6 +19,7 @@ The lecture is mainly for clearing doubts and covering the most confusing parts.
 
 - Wednesday (10:00 a.m.-11:25 a.m., Venue: 205)
 - Saturday (10:00 a.m.-11:25 a.m., Venue: 205)
+- Tutorial : Saturday (3:30 p.m.-4:30 p.m., Venue: 204)
 
 #### Lectures
 
