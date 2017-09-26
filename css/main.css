@@ -485,3 +485,6 @@ border-left: 1px dotted #808080;
 color: rgb(102, 102, 102);
 }
 
+
+a {
+	text-decoration: underline
