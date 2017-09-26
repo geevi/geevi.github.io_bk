@@ -24,7 +24,7 @@ The lecture is mainly for clearing doubts and covering the most confusing parts.
 
 1.  **Introduction** \\
     Some basic questions. Desision Problems. Turing Machines. Efficient Computation.\\
-    *Readings: [Book, Lecture 1](book)*
+    *Readings: [Book, Lecture 1](notes)*
 
 2.  **Undecidability & Hierachy Theorems** \\
     *Readings :  Papadimitriou Chapters 3,7*
