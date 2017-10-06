@@ -22,18 +22,26 @@ Automatically generated HTML file from DocOnce source
                0,
                'table_of_contents',
                'table_of_contents'),
-              ('Introduction', 0, None, '___sec0'),
+              ('Lecture 1: Introduction', 0, None, '___sec0'),
               ('Decision Problems', 1, None, '___sec1'),
               ('Turing Machines', 1, None, '___sec2'),
               ('Robustness of TM', 2, None, '___sec3'),
               ('Efficient Algorithms', 1, None, '___sec4'),
               ('Polynomial time vs Exponential Time', 2, None, '___sec5'),
               ('Readings', 1, None, '___sec6'),
-              ('Undecidability', 0, None, '___sec7'),
-              ('Deciding a Langauge/Problem', 1, None, '___sec8'),
+              ("Lecture 2: Paradox's and Diagonalization",
+               0,
+               None,
+               '___sec7'),
+              ("Russell's Paradox and Diagonalization", 1, None, '___sec8'),
               ('Universal Turing Machines', 1, None, '___sec9'),
               ('Halting Problem', 1, None, '___sec10'),
-              ('Heirarchy Theorems', 1, None, '___sec11')]}
+              ('Lecture 3: Non Determinism, NP and Search Problems',
+               0,
+               None,
+               '___sec11'),
+              ('Non Deterministic Turing Machines', 1, None, '___sec12'),
+              ('NP and Search Problems', 1, None, '___sec13')]}
 end of tocinfo -->
 
 <body>
@@ -74,28 +82,30 @@ MathJax.Hub.Config({
 <center><b>Machine Learning Lab, IIIT Hyderabad</b></center>
 <br>
 <p>
-<center><h4>Sep 21, 2017</h4></center> <!-- date -->
+<center><h4>Oct 6, 2017</h4></center> <!-- date -->
 <br>
 
 <h1 id="table_of_contents">Table of contents</h2>
 
 <p>
-<a href="#___sec0"> Introduction </a><br>
+<a href="#___sec0"> Lecture 1: Introduction </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec1"> Decision Problems </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec2"> Turing Machines </a><br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="#___sec3"> Robustness of TM </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec4"> Efficient Algorithms </a><br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="#___sec5"> Polynomial time vs Exponential Time </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec6"> Readings </a><br>
-<a href="#___sec7"> Undecidability </a><br>
-&nbsp; &nbsp; &nbsp; <a href="#___sec8"> Deciding a Langauge/Problem </a><br>
+<a href="#___sec7"> Lecture 2: Paradox's and Diagonalization </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec8"> Russell's Paradox and Diagonalization </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec9"> Universal Turing Machines </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec10"> Halting Problem </a><br>
-&nbsp; &nbsp; &nbsp; <a href="#___sec11"> Heirarchy Theorems </a><br>
+<a href="#___sec11"> Lecture 3: Non Determinism, NP and Search Problems </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec12"> Non Deterministic Turing Machines </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec13"> NP and Search Problems </a><br>
 </p>
 <p>
 
-<center><h1 id="___sec0">Introduction </h1></center> <hr>
+<center><h1 id="___sec0">Lecture 1: Introduction </h1></center> <hr>
 
 <p>
 You have seen algorithms for a variety of problems. This begs the question
@@ -173,6 +183,10 @@ chromatic number.
 
 <p>
 The simplfied model for computer/programming language will be the Turning Machine (TM).
+The discovery of the TM has a long and interesting history. See <a href="https://www.amazon.in/Logicomix-Epic-Search-Trurh-Truth/dp/0747597200/ref=sr_1_1?s=books&ie=UTF8&qid=1506918619&sr=1-1&keywords=logicomix" target="_self">Logicomix</a>,
+for a nice read in comic book format.
+
+<p>
 The Turing Machine has many tapes (which is similar to the hard disk in 
 a modern computer) and a limited set of states (which is similar to the RAM or the cache).
 There is a read-only input tape, where the input is written and a write-only output
@@ -236,6 +250,8 @@ See the example : <a href="http://turingmachinesimulator.com/shared/oihvkhvacu" 
 <p>
 Note that it is extremely tedious to write algorithms as a TM. Neverthless, all the 
 algorithms can be written as TM.
+
+<p>
  <div class='problem'>
                 <b>Problem 2: </b> Design a TM which decides the language :
 $$
@@ -247,6 +263,12 @@ Write the program first as a pseudo code and then in the format in <a href="http
 
 <p>
 </div>
+
+<p>
+We will use a word "decidable" to indicate that a descision problem is solvable.
+A TM is said to decide a descision problem if there is a TM, that accepts
+all the YES-instances and rejects all other strings. Note that this TM will never 
+go  into an infinite loop.
 
 <h2 id="___sec3">Robustness of TM </h2>
 
@@ -337,22 +359,136 @@ Michael Sipser, Introduction to Theory of Computation
 Christos Papadimitriou, Computational Complexity
 
 <p>
+<b>Misc: </b>
+<a href="https://www.amazon.in/Logicomix-Epic-Search-Trurh-Truth/dp/0747597200/ref=sr_1_1?s=books&ie=UTF8&qid=1506918619&sr=1-1&keywords=logicomix" target="_self">Logicomix</a>
 
-<center><h1 id="___sec7">Undecidability </h1></center> <hr>
+<center><h1 id="___sec7">Lecture 2: Paradox's and Diagonalization </h1></center> <hr>
 
-<h1 id="___sec8">Deciding a Langauge/Problem </h1>
+<h1 id="___sec8">Russell's Paradox and Diagonalization </h1>
 
 <p>
-Deciding
+<em>There is a village where the barbers shave only those people who 
+do not shave by themselves. Now will a does a barber shave himself?</em>
 
 <p>
-Recursive Enumerable
+If YES, then he cannot shave himself. If NO, then he can shave himself.
+
+<p>
+See <a href="https://www.amazon.in/Godel-Escher-Bach-Eternal-Golden/dp/0140289208" target="_self">Godel, Escher, Bach</a>,
+for more paradoxes and their history.
+
+<p>
+Now we will solve a problem using the Russell's paradox. 
+Let \( \mathbb N \) be the set of natural numbers and \( \mathcal{P}(N) \) is the set of all
+subsets of \( \mathbb N \) (or the power set of \( \mathbb N \)). Show that there cannot 
+be a one to one mapping between \( \mathbb N \) and \( \mathcal{P}(N) \) that has range 
+equal to \( \mathcal{P}(N) \) (that is for every subset of \( \mathbb N \), there is some 
+integer that maps to it).
+
+<p>
+Suppose there is a one to one mapping \( f \) that has range 
+equal to \( \mathcal{P}(N) \). Consider the set 
+$$
+S = \{ x : x \notin f(x) \}
+$$
+
+Since \( f \) that has range equal to \( \mathcal{P}(N) \), there is some 
+integer \( y \) that maps to \( S \) (that is \( f(y) = S \)). Now does \( y \in S \)?
+
+<p>
+ <div class='problem'>
+                <b>Problem 4: </b> Let STRINGS be the set of all infinite length binary sequences. That is 
+$$
+\text{STRINGS} = \{ x:\mathbb{N} \rightarrow \{0,1\}  \}
+$$
+
+That is any infinite length binary sequence is simply a function that maps every integer 
+to the bit at the corresponding position. Show that there cannot 
+be a one to one mapping between \( \mathbb N \) and STRINGS.
+
+<p>
+</div>
 
 <h1 id="___sec9">Universal Turing Machines </h1>
+Computer as we know them are general purpose machines. That is, you can give them
+any program in a particular format (a programming langauge, or assembly), and they
+can execute it. However the Turing Machines that we saw in the previous lecture,
+seems to be tailor made for a particular problem.
+
+<p>
+The first step to making Turing Machines general purpose is to encode a TM as a string,
+which could be fed as input to a general purpose TM, which we will call Universal Turing
+Machines. As we saw previously, a TM is a tuple 
+
+$$
+M = (\Omega, \Sigma, \mathcal{T}, \delta, \omega_{\text{start}}, \omega_{\text{accept}}, \omega_{\text{reject}})
+$$
+
+<p>
+where \( \Omega \) is a set of states, \( \Sigma \) is the alphabet for the language, \( \mathcal{T} \) is the tape 
+alphabet, \( \delta \) is a transition function and \( \omega_{\text{start}}, \omega_{\text{accept}}, \omega_{\text{reject}} \)
+are the special start, reject, accept states respectively. Note that the states, the alphabets and the special states,
+are all finite and can be encoded as a finite alphabet. \( \delta \) function also is finite and could be represented as 
+a set of rules (similar to how the turning machine simulater is doing). We will denote the string representing a
+TM \( M \) by \( \langle M \rangle \).
+
+<p>
+A Universal Turing Machine takes a string \( (\langle M \rangle, x) \), and simulates the running of the TM \( M \) on the 
+input \( x \). It is just another TM having its own transition function, alphabets and states. However it is designed
+such that it can accept a TM encoding \( \langle M \rangle \) as in part of the input, and the transition function
+is defined such that it simulates the running of \( M \) on a string \( x \).
 
 <h1 id="___sec10">Halting Problem </h1>
 
-<h1 id="___sec11">Heirarchy Theorems </h1>
+<p>
+Recall that we started with the question whether all problems can be solved by a TM.
+Consider the following descision problem:
+$$
+H = \{ (\langle M \rangle,x) : M \text{ accepts } x \}
+$$
+
+That is, given a TM encoding \( \langle M \rangle \) and a string \( x \), check if 
+\( M \) accepts \( x \). Can you think of a TM which decides \( H \). One way is to simulate \( M \) on \( x \)
+like the universal TM. But its possible that \( M \) loops on \( x \) and the UTM will also loop.
+
+<p>
+Suppose there a TM \( M_H \) which decides \( H \). We will define a new TM \( D \) which takes an encoding
+of a TM \( \langle M \rangle \) as input , which does
+the following 
+
+<ol>
+   <li> Run \( M_H \) on \( (\langle M \rangle, \langle M \rangle) \).</li>
+   <li> Output the opposite of what \( M_H \) outputs.</li>
+</ol>
+
+So \( D \) accepts \( \langle M \rangle \) if \( M \) rejects the input \( \langle M \rangle \) and 
+it rejects of if \( M \) accepts the input \( \langle M \rangle \). Now the question is 
+what is the output of of \( D \) when run on \( \langle D \rangle \)?
+
+<p>
+You will see that there is a problem, very similar to the Russell's paradox here. Hence 
+there cannot be a TM \( D \). But we can construct \( D \) if there is a TM \( M_H \). So 
+neither can there be a TM \( M_H \) which decides \( H \).
+
+<p>
+\( H \) is popularly known as the halting problem which was shown by Turing to be not
+decidable (or undecidable).
+
+<p>
+ <div class='problem'>
+                <b>Problem 5: </b> Let \( \text{EMPTY} = \{ \langle M \rangle : M \text{ rejects all inputs } \} \). Show 
+that this problem is undecidable.
+
+<p>
+</div>
+
+<p>
+
+<center><h1 id="___sec11">Lecture 3: Non Determinism, NP and Search Problems </h1></center> <hr>
+
+<h1 id="___sec12">Non Deterministic Turing Machines </h1>
+
+<h1 id="___sec13">NP and Search Problems </h1>
 
 <!-- ------------------- end of main content --------------- -->
 
