@@ -15,6 +15,12 @@ Complexity theory studies what problems can and cannot be solved by computers gi
 Students are expected to read the corresponding chapter from the textbook (mentioned under readings), before attending the lecture. 
 The lecture is mainly for clearing doubts and covering the most confusing parts.
 
+The is a short course with 13 lectures for students who might not have
+taken a Theory of Computation course. However sufficient knowledge of 
+discrete maths and algorithms is assumed. It is not supposed to be a 
+rigorous one, for research student, but rather an introduction to field 
+of complexity theory.
+
 #### Timings
 
 - Wednesday (10:00 a.m.-11:25 a.m., Venue: 205)
@@ -27,13 +33,13 @@ The lecture is mainly for clearing doubts and covering the most confusing parts.
     Some basic questions. Desision Problems. Turing Machines. Efficient Computation.\\
     *Readings: [Notes, Lecture 1](notes)*
 
-2.  **Undecidability & Hierachy Theorems** \\
-    *Readings :  Papadimitriou Chapters 3,7*
+2.  **Paradox's, Diagonalization, Undecidablility** \\
+    *Readings: [Notes, Lecture 2](notes)*
 
-3.  **Search Problems, Nondeterminism, NP and Reductions** \\
-    *Readings :  Papadimitriou Chapters 8*
+3.  **Nondeterminism, NP and Search Problems** \\
+    *Readings: [Notes, Lecture 3](notes)*
 
-4.  **coNP, NP-Completenesss & Cooks Theorem** \\
+4.  **Reductions, NP-Completenesss & Cooks Theorem** \\
     *Readings :  Papadimitriou Chapter 10*
 
 5.  **NL, Savitch's Theorem, Immerman-Szelepcsenyi Theorem** \\
