@@ -82,7 +82,7 @@ MathJax.Hub.Config({
 <center><b>Machine Learning Lab, IIIT Hyderabad</b></center>
 <br>
 <p>
-<center><h4>Oct 6, 2017</h4></center> <!-- date -->
+<center><h4>Oct 7, 2017</h4></center> <!-- date -->
 <br>
 
 <h1 id="table_of_contents">Table of contents</h2>
@@ -368,7 +368,7 @@ Christos Papadimitriou, Computational Complexity
 
 <p>
 <em>There is a village where the barbers shave only those people who 
-do not shave by themselves. Now will a does a barber shave himself?</em>
+do not shave by themselves. Now does a barber shave himself?</em>
 
 <p>
 If YES, then he cannot shave himself. If NO, then he can shave himself.
@@ -438,6 +438,23 @@ input \( x \). It is just another TM having its own transition function, alphabe
 such that it can accept a TM encoding \( \langle M \rangle \) as in part of the input, and the transition function
 is defined such that it simulates the running of \( M \) on a string \( x \).
 
+<p>
+<b>Configuration.</b>
+An important concept for doing simulation is the configuration of a TM. Lets 
+stick to 1-tape TMs for now. The "state" of the algorithm (not the TM state) is
+really consist of the the TM's state, the contents of its tape as well as the position
+of the tape heads. If a TM is at state \( \omega_i \), has the string 101101111 in 
+its tape and the tape head is at the 5th position, then its current configuration is 
+1011 \( \omega_i \) 01111. Note that this is a string over the alphabet \( \mathcal{T} \cup \Omega \). 
+The computation of TM is a graph in the space of all TM configurations. If the TM 
+halts, it is a path which ends in a configuration having an accept or reject state.
+If it loops, there will be a cycle in this graph.
+
+<p>
+A universal TM, goes over a configuration string, then goes over the encoding of the delta function,
+finds out which rule in the delta function to use, and can update the configuration,
+to reflect the next configuration of the TM begin simulated.
+
 <h1 id="___sec10">Halting Problem </h1>
 
 <p>
@@ -488,7 +505,60 @@ that this problem is undecidable.
 
 <h1 id="___sec12">Non Deterministic Turing Machines </h1>
 
+<p>
+Last lecture we saw that TM's can be encoded as strings and simulated by a
+universal TM using the configurations. We also saw that simulation of a TM,
+is essentialy tracing a path in the configuration space. But in the TMs that 
+we defined, the out degree of any node (a configuration) 
+in the graph (in the configuration space) is one.
+
+<p>
+Similar to the Nondeterministic finite automata, we can also define TMs 
+with delta rules that results in multiple next states 
+(called Nondeterministic Turing Machines or NTMs). Then the delta rules
+will be of the form \( \delta:\Omega\times \mathcal{T} \rightarrow \mathcal{P}(\Omega\times \mathcal{T}\times \{\langle, \rangle, -\}) \).
+(\( \mathcal{P} \) denotes the power set). So the configuration graph of a 
+NTM can have out degree greater than \( 1 \). However the it still has to be a finite 
+number since the size of \( \mathcal{P}(\Omega\times \mathcal{T}\times \{\langle, \rangle, -\}) \) is 
+finite. Following the different paths, an NTM could accept, reject or keep looping.
+So we need to define what is meant by deciding a language by an NTM.
+
+<p>
+An NTM is said to decide a language (a descision problem) \( L \) iff,
+for all strings in the language, there exists one path in the configuration 
+space that results in accept state.  For strings not in the language, all 
+paths in the configuration space should result in reject state.
+
+<p>
+We know that NFA (Nondeterministic Finite automata) can always be converted to 
+a deterministic one. However for Pushdown Automaton this coverstion is not possible
+always. We will see that for TMs, this conversion can always be done. That is the 
+set of languages that can be decided by TMs does not change by allowing 
+nondeterminism.
+
+<p>
+Recall that UTM simulated a deterministic TM, by tracing the path in the configuration
+space. But for NTMs, the graph in the configuration space is a tree. A simple 
+idea is for a UTM to do a graph traversal. DFS might be a bad idea, because
+some of the paths go into infinite loops. Hence it can to BFS. The first time,
+it finds that the NTM has reached the accept state, the UTM can also accept.
+If it never finds an accept state, the simulating TM rejects.
+
 <h1 id="___sec13">NP and Search Problems </h1>
+
+<p>
+As we disscussed earlier, an NTM can take different paths in the configuration space.
+The length of the path is essentialy the number of steps. Now we will define 
+the worst case running time for a NTM.
+
+<p>
+For a language \( L \), on inputs of size \( n \), the worst case running time of an NTM 
+is the length of the longest path in the configuration space on any of the inputs 
+of size \( n \).
+
+<p>
+NP or Nondeterministic Polynomial time  is the class of descision problems for which,
+there is an NTM which decides it in worst case polynomial time.
 
 <!-- ------------------- end of main content --------------- -->
 
