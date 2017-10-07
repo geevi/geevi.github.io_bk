@@ -41,7 +41,9 @@ Automatically generated HTML file from DocOnce source
                None,
                '___sec11'),
               ('Non Deterministic Turing Machines', 1, None, '___sec12'),
-              ('NP and Search Problems', 1, None, '___sec13')]}
+              ('Nondeterministic Polynomial Time : NP', 1, None, '___sec13'),
+              ('NP : Verifier Definition', 1, None, '___sec14'),
+              ('Descision vs Search Problems', 1, None, '___sec15')]}
 end of tocinfo -->
 
 <body>
@@ -101,7 +103,9 @@ MathJax.Hub.Config({
 &nbsp; &nbsp; &nbsp; <a href="#___sec10"> Halting Problem </a><br>
 <a href="#___sec11"> Lecture 3: Non Determinism, NP and Search Problems </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec12"> Non Deterministic Turing Machines </a><br>
-&nbsp; &nbsp; &nbsp; <a href="#___sec13"> NP and Search Problems </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec13"> Nondeterministic Polynomial Time : NP </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec14"> NP : Verifier Definition </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec15"> Descision vs Search Problems </a><br>
 </p>
 <p>
 
@@ -544,7 +548,7 @@ some of the paths go into infinite loops. Hence it can to BFS. The first time,
 it finds that the NTM has reached the accept state, the UTM can also accept.
 If it never finds an accept state, the simulating TM rejects.
 
-<h1 id="___sec13">NP and Search Problems </h1>
+<h1 id="___sec13">Nondeterministic Polynomial Time : NP </h1>
 
 <p>
 As we disscussed earlier, an NTM can take different paths in the configuration space.
@@ -559,6 +563,48 @@ of size \( n \).
 <p>
 NP or Nondeterministic Polynomial time  is the class of descision problems for which,
 there is an NTM which decides it in worst case polynomial time.
+
+<h1 id="___sec14">NP : Verifier Definition </h1>
+
+<p>
+We will define descision problems that are <em>verifiable</em>. A descision problem 
+is said to be verifable if there exists  a deterministic TM \( M \) that takes two 
+inputs \( (x,y) \) where \( x \) is an instance of the descision problem and \( y \) is
+called a certificate which has length of  atmost \( p(n) \) where \( p \) is a polynomial. 
+For YES-instances \( x \), there should exist a certificate 
+\( y \) such the \( M \) accepts the input \( (x,y) \). For instances not in the language,
+for every \( y \) of length \( p(n) \), \( M \) should reject on \( (x,y) \). Also the running
+time of \( M \) must be polynomial time in size of \( x \).
+
+<p>
+ <div class='problem'>
+                <b>Problem 6: </b> Show that NP is the same as the set of verifable languages.
+
+<p>
+</div>
+
+<p>
+An example of a verifiable language is the Clique problem.
+
+$$
+\text{CLIQUE} = \{ (G,k): G \text{ has a clique of size } k  \}
+$$
+
+<p>
+A certificate for YES-instance \( (G,k) \),  is just the list of vertices in a \( k \)-clique.
+The polynomial time verifier just checks if there is an edge between all pairs of
+vertices. If \( (G,k) \) is not in the language, then for any set of \( k \) vertices,
+that you can give to the verifier, it will reject, since there will not be an 
+edge between some pair in the list.
+
+<p>
+ <div class='problem'>
+                <b>Problem 7: </b> Show that the CHROMATIC-NUMBER problem defined in Lecture 1 is verifiable.
+
+<p>
+</div>
+
+<h1 id="___sec15">Descision vs Search Problems </h1>
 
 <!-- ------------------- end of main content --------------- -->
 
