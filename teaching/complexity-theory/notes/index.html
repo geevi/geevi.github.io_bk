@@ -43,7 +43,14 @@ Automatically generated HTML file from DocOnce source
               ('Non Deterministic Turing Machines', 1, None, '___sec12'),
               ('Nondeterministic Polynomial Time : NP', 1, None, '___sec13'),
               ('NP : Verifier Definition', 1, None, '___sec14'),
-              ('Descision vs Search Problems', 1, None, '___sec15')]}
+              ('Descision vs Search Problems', 1, None, '___sec15'),
+              ('Lecture 4: Reductions, Cook-Levin Theorem and NP-Completeness',
+               0,
+               None,
+               '___sec16'),
+              ('Polynomial Time Reductions', 1, None, '___sec17'),
+              ('Cook-Levin Theorem', 1, None, '___sec18'),
+              ('NP Compeleness / Hardness', 1, None, '___sec19')]}
 end of tocinfo -->
 
 <body>
@@ -84,7 +91,7 @@ MathJax.Hub.Config({
 <center><b>Machine Learning Lab, IIIT Hyderabad</b></center>
 <br>
 <p>
-<center><h4>Oct 7, 2017</h4></center> <!-- date -->
+<center><h4>Oct 14, 2017</h4></center> <!-- date -->
 <br>
 
 <h1 id="table_of_contents">Table of contents</h2>
@@ -106,6 +113,10 @@ MathJax.Hub.Config({
 &nbsp; &nbsp; &nbsp; <a href="#___sec13"> Nondeterministic Polynomial Time : NP </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec14"> NP : Verifier Definition </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec15"> Descision vs Search Problems </a><br>
+<a href="#___sec16"> Lecture 4: Reductions, Cook-Levin Theorem and NP-Completeness </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec17"> Polynomial Time Reductions </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec18"> Cook-Levin Theorem </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec19"> NP Compeleness / Hardness </a><br>
 </p>
 <p>
 
@@ -605,6 +616,101 @@ edge between some pair in the list.
 </div>
 
 <h1 id="___sec15">Descision vs Search Problems </h1>
+
+<center><h1 id="___sec16">Lecture 4: Reductions, Cook-Levin Theorem and NP-Completeness </h1></center> <hr>
+
+<p>
+The notes are mostly from Section 7.4, 7.5 in the Sipser book.
+
+<h1 id="___sec17">Polynomial Time Reductions </h1>
+
+<p>
+Last lecture, we showed that for some problems, the search problem can be solved in polytime,
+if the corresponding desciion problem can be solved in polytime. In this lecture,
+we will show that many desicion problems can be solved by solving one particular 
+desciion problem called \( 3 \)-SAT.
+
+<p>
+For this we need first define a reduction. The following problems were defined previously
+
+<ol>
+   <li> \( 3 \)-SAT = \( \{ \phi : \phi \text{ is a 3CNF formula that is satisfiable} \} \).</li>
+   <li> CLIQUE = \( \{ (G,k) : G \text{ has a clique of size } k \}. \)</li>
+</ol>
+
+We will say that \( f \) is a (poly time) reduction from \( 3 \)-SAT to CLIQUE, if it maps \( 3 \)-CNF formulas \( \phi \)
+to a tuple \( (G,k) \) where \( G \) is a graph and \( k \) is a number such that 
+
+<ol>
+   <li> \( f \) can be computed by a polynomial time TM.</li>
+   <li> \( \phi \) is satisfiable if and only if \( G \) has a \( k \) clique.</li>
+</ol>
+
+If we have such an \( f \), any polynomial time algorithm for CLIQUE can be used to 
+design a polynomial time algorithm for \( 3 \)-SAT.
+
+<p>
+ <div class='problem'>
+                <b>Problem 8: </b> If we have such an \( f \), give a polynomial time algorithm for \( 3 \)-SAT, 
+assuming there is a polynomial time algorithm for CLIQUE.
+
+<p>
+</div>
+
+<p>
+The algorithm for computing \( f \) is as follows:
+
+<ol>
+   <li> For every clause in \( \phi \), put \( 3 \) new verticies correponding to each literal in the clause.</li>
+   <li> Put all edges in the graph except:
+
+<ol type="a"></li>
+       <li> between the 3 veritices correponding to the same clause.</li>
+       <li> \( x_i \) an \( \bar x_i \) for all \( i \).</li>
+</ol>
+
+   <li> Set \( k \) to be equal to the number of clauses.</li>
+</ol>
+
+ <div class='problem'>
+                <b>Problem 9: </b> Verify the following:
+   <li> \( f \) is polynomial time.</li>
+   <li> Show that if \( \phi \) is satisfiable \( G \) has a \( k \) CLIQUE.</li>
+   <li> Show that if \( G \) has a \( k \) CLIQUE then \( \phi \) is satisfiable.
+
+<p>
+</div>
+
+<p>
+Such a reduction says that CLIQUE is a harder problem than \( 3 \)-SAT, because an algo for 
+CLIQUE gives an algo for \( 3 \)-SAT and we dont know if the reverse is True. Hence it is denote as
+$$ \text{CLIQUE} \geq_p 3\text{-SAT}.$$
+
+<h1 id="___sec18">Cook-Levin Theorem </h1>
+The Cook-Levin Theorem tells that the reverse reduction also exists. In fact,
+it states that any language in NP can be reduced to SAT
+
+<p>
+<b>Cook-Levin Theorem.</b>
+For any language \( L \in NP \), SAT \( \geq_p  \) L.
+
+<p>
+For doing this, for any language \( L \), that has a nondeterministic polynomial time TM,
+we need to come up with a polynomial time reduction, which satisfies the conditions,
+given in the previous section.
+
+<p>
+See Theorem 7.37 for the proof of Cook-Levin Theorem.
+
+<h1 id="___sec19">NP Compeleness / Hardness </h1>
+
+<p>
+Vertex Cover 3SAT Reduction.
+
+<p>
+SAT 3SAT Reduction.
+
+<p>
 
 <!-- ------------------- end of main content --------------- -->
 
