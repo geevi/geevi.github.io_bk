@@ -52,8 +52,12 @@ Automatically generated HTML file from DocOnce source
               ('Cook-Levin Theorem', 1, None, '___sec18'),
               ('NP Compeleness / Hardness', 1, None, '___sec19'),
               ('Lecture 5: More Time Complexity', 0, None, '___sec20'),
-              ('EXP and Time Heirachy Theorem', 1, None, '___sec21'),
-              ('coNP and Map of Complexity classes', 1, None, '___sec22')]}
+              ('NP-completeness of Vertex Cover and Subset Sum',
+               1,
+               None,
+               '___sec21'),
+              ('EXP and Time Heirachy Theorem', 1, None, '___sec22'),
+              ('coNP and Map of Complexity classes', 1, None, '___sec23')]}
 end of tocinfo -->
 
 <body>
@@ -121,8 +125,9 @@ MathJax.Hub.Config({
 &nbsp; &nbsp; &nbsp; <a href="#___sec18"> Cook-Levin Theorem </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec19"> NP Compeleness / Hardness </a><br>
 <a href="#___sec20"> Lecture 5: More Time Complexity </a><br>
-&nbsp; &nbsp; &nbsp; <a href="#___sec21"> EXP and Time Heirachy Theorem </a><br>
-&nbsp; &nbsp; &nbsp; <a href="#___sec22"> coNP and Map of Complexity classes  </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec21"> NP-completeness of Vertex Cover and Subset Sum </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec22"> EXP and Time Heirachy Theorem </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec23"> coNP and Map of Complexity classes  </a><br>
 </p>
 <p>
 
@@ -739,7 +744,10 @@ Vertex Cover 3SAT Reduction.
 
 <center><h1 id="___sec20">Lecture 5: More Time Complexity </h1></center> <hr>
 
-<h1 id="___sec21">EXP and Time Heirachy Theorem </h1>
+<h1 id="___sec21">NP-completeness of Vertex Cover and Subset Sum </h1>
+See Section 7.5 in Sipser 2nd Edition
+
+<h1 id="___sec22">EXP and Time Heirachy Theorem </h1>
 EXPTIME is the set of languages for which there is a poly time determinitic
 TM that runs in \( 2^{n^k} \) for some integer \( k \).
 
@@ -777,7 +785,7 @@ language decided by \( D \) is not in P. So P \( \subsetneq \) EXPTIME.
 <p>
 The question of whether NP = EXPTIME is again open.
 
-<h1 id="___sec22">coNP and Map of Complexity classes  </h1>
+<h1 id="___sec23">coNP and Map of Complexity classes  </h1>
 The complement of a language \( L \) is 
 $$ \bar L = \{ x : x \not in L \}.$$ 
 Let coNP \( = \{ L : \bar L \in \text{NP} \} \).
