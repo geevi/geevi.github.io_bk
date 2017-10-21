@@ -67,7 +67,7 @@ Automatically generated HTML file from DocOnce source
                1,
                None,
                '___sec26'),
-              ('Immerman-Szelepcsenyi Theorem', 1, None, '___sec27'),
+              ('Overview of next part of course', 1, None, '___sec27'),
               ('Readings', 1, None, '___sec28')]}
 end of tocinfo -->
 
@@ -142,7 +142,7 @@ MathJax.Hub.Config({
 <a href="#___sec24"> Lecture 5: Space Complexity </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec25"> Space Complexity classes and some Relationships </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec26"> Non Determinism and Space : NL-complete, Savith's Theorem </a><br>
-&nbsp; &nbsp; &nbsp; <a href="#___sec27"> Immerman-Szelepcsenyi Theorem  </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec27"> Overview of next part of course  </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec28"> Readings  </a><br>
 </p>
 <p>
@@ -866,7 +866,8 @@ $$ \text{L} \subsetneq \text{PSPACE}.$$
 <p>
  <div class='problem'>
                 <b>Problem 14: </b> Show that 
-$$\text{L} = \text{coL} \subseteq \text{P} \subsetneq \text{PSPACE} \subseteq \text{EXPTIME}.$$
+   <li> \( \text{L} = \text{coL} \subseteq \text{P} \subset \text{PSPACE} \subseteq \text{EXPTIME}. \)</li>
+   <li> \( \text{L} \subsetneq \text{PSPACE}. \)
 
 <p>
 </div>
@@ -885,9 +886,9 @@ $$\text{NL-complete} = \{ R : R \text{ is a language such that for all other lan
 
 <p>
  <div class='problem'>
-                <b>Problem 15: </b> Show that 
+                <b>Problem 15: </b> Show that</li> 
    <li> \( \text{REACHABILITY} \in \text{NL-complete}. \)</li>
-   <li> \( \text{NL} \in \text{P}. \)
+   <li> \( \text{NL} \subseteq \text{P}. \)
 
 <p>
 </div>
@@ -900,13 +901,11 @@ This theorm is known as Savitch's Theorem.
 Savitch's theorem says that \( \text{NPSPACE}(f(n)) \subseteq \text{SPACE}(f^2(n)) \).
 See proof in proof of Theorem 8.5 in Sipser book.
 
-<h1 id="___sec27">Immerman-Szelepcsenyi Theorem  </h1>
+<h1 id="___sec27">Overview of next part of course  </h1>
 
 <p>
-In time complexity, we didnt have a proof of NP = coNP. This remains an open problem.
-However in space complexity, we know that NL = coNL. This theorem is known as the 
-Immerman-Szelepcsenyi Theorem.
-See Section 8.6 in Sipser book.
+Streaming algorithms for Well paranthesised expressions.
+Lowerbound using communication complexity.
 
 <h1 id="___sec28">Readings  </h1>
 Chapter 8, Introduction to Theory of Computation by Micheal Sipser, Edition 2.
