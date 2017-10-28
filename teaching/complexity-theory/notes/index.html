@@ -78,21 +78,23 @@ Automatically generated HTML file from DocOnce source
               ('Randomized TMs and Complexity Classes', 1, None, '___sec32'),
               ('Readings', 1, None, '___sec33'),
               ('Lecture 8: Randomized Algos', 0, None, '___sec34'),
-              ('Randomization: PIT and Schwartz-Zippel Lemma',
-               1,
-               None,
-               '___sec35'),
+              ('BPP and Amplification', 1, None, '___sec35'),
               ('Approx MAX-CUT', 1, None, '___sec36'),
               ('Undirected REACHABILITY in RL', 1, None, '___sec37'),
               ('Readings', 1, None, '___sec38'),
-              ('Lecture 9: Streaming Algos', 0, None, '___sec39'),
-              ('Readings', 1, None, '___sec40'),
-              ('Lecture 10: Communication Complexity', 0, None, '___sec41'),
+              ('Lecture 9:', 0, None, '___sec39'),
+              ('Analysis of Random Walks', 1, None, '___sec40'),
+              ('Randomization: PIT and Schwartz-Zippel Lemma',
+               1,
+               None,
+               '___sec41'),
               ('Readings', 1, None, '___sec42'),
-              ('Lecture 11: Cryptography', 0, None, '___sec43'),
+              ('Lecture 10: Communication Complexity', 0, None, '___sec43'),
               ('Readings', 1, None, '___sec44'),
-              ('Lecture 12: Learning Theory', 0, None, '___sec45'),
-              ('Readings', 1, None, '___sec46')]}
+              ('Lecture 11: Cryptography', 0, None, '___sec45'),
+              ('Readings', 1, None, '___sec46'),
+              ('Lecture 12: Learning Theory', 0, None, '___sec47'),
+              ('Readings', 1, None, '___sec48')]}
 end of tocinfo -->
 
 <body>
@@ -133,7 +135,7 @@ MathJax.Hub.Config({
 <center><b>Machine Learning Lab, IIIT Hyderabad</b></center>
 <br>
 <p>
-<center><h4>Oct 25, 2017</h4></center> <!-- date -->
+<center><h4>Oct 28, 2017</h4></center> <!-- date -->
 <br>
 
 <h1 id="table_of_contents">Table of contents</h2>
@@ -174,18 +176,20 @@ MathJax.Hub.Config({
 &nbsp; &nbsp; &nbsp; <a href="#___sec32"> Randomized TMs and Complexity Classes </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec33"> Readings  </a><br>
 <a href="#___sec34"> Lecture 8: Randomized Algos </a><br>
-&nbsp; &nbsp; &nbsp; <a href="#___sec35"> Randomization: PIT and Schwartz-Zippel Lemma </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec35">  BPP and Amplification  </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec36">  Approx MAX-CUT  </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec37"> Undirected REACHABILITY in RL </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec38"> Readings  </a><br>
-<a href="#___sec39"> Lecture 9: Streaming Algos  </a><br>
-&nbsp; &nbsp; &nbsp; <a href="#___sec40"> Readings  </a><br>
-<a href="#___sec41"> Lecture 10: Communication Complexity  </a><br>
+<a href="#___sec39"> Lecture 9:   </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec40"> Analysis of Random Walks </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec41"> Randomization: PIT and Schwartz-Zippel Lemma </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec42"> Readings  </a><br>
-<a href="#___sec43"> Lecture 11: Cryptography  </a><br>
+<a href="#___sec43"> Lecture 10: Communication Complexity  </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec44"> Readings  </a><br>
-<a href="#___sec45"> Lecture 12: Learning Theory  </a><br>
+<a href="#___sec45"> Lecture 11: Cryptography  </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec46"> Readings  </a><br>
+<a href="#___sec47"> Lecture 12: Learning Theory  </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec48"> Readings  </a><br>
 </p>
 <p>
 
@@ -1025,26 +1029,68 @@ http://theory.cs.princeton.edu/complexity/book.pdf
 
 <center><h1 id="___sec34">Lecture 8: Randomized Algos </h1></center> <hr>
 
-<h1 id="___sec35">Randomization: PIT and Schwartz-Zippel Lemma </h1>
-Polynomial written as a arithmetic circuit.
+<h1 id="___sec35">BPP and Amplification  </h1>
 
 <p>
-PIT problem
+Last lecture we saw that \( \text{RP}_{1/100} = \text{RP}_{99/100} \). 
+This lecture we said that \( \text{BPP}_{1/2 + \epsilon} = \text{BPP}_{1 - \epsilon} \)
+for any small constant \( \epsilon \).
 
 <p>
-Schwartz-Zippel Lemma
+ <div class='problem'>
+                <b>Problem 19: </b> Let \( \text{BPP}_\alpha \) be the class of languguages L that have a PTM M such that</li>
+  <li> If \( x\in L \) then \( \Pr[M(x) \text{accepts}] \geq \alpha \).</li>
+  <li> If \( x\notin L \) then \( \Pr[M(x) \text{rejects}] \geq \alpha \).
 
 <p>
-Randomized algorithm for PIT
+Show that:</li>
 
-<p>
-Randomized algo for Perfect Matching
+<ol>
+   <li> \( \text{BPP}_{1/2} \) is the set of all languages.</li>
+   <li> \( \text{BPP}_{2/3} = \text{BPP}_{20/27} \) (without using Chernoff's Bounds).
+            </div></li>
+</ol>
+
+See Chapter 10.2 in Sipser
 
 <h1 id="___sec36">Approx MAX-CUT  </h1>
+See Chapter 10.1 in Sipser for approximation algorithms. 
+See Section 2.3.4 in 
+https://people.seas.harvard.edu/~salil/pseudorandomness/power.pdf
 
 <h1 id="___sec37">Undirected REACHABILITY in RL </h1>
 
+<p>
+See Section 2.4 in 
+https://people.seas.harvard.edu/~salil/pseudorandomness/power.pdf
+
+<p>
+ <div class='problem'>
+                <b>Problem 20: </b> Let M be the adjacency matrix of a undirected \( d \)-regular graph \( G \) (all vertices have exactly \( d \) neighbours).
+Show that:
+
+<ol>
+   <li> \( d \) is an eigenvalue of \( M \).</li>
+   <li> If \( c \) is the number of connected components in \( G \), then there are \( c \) linearly independent eigenvectors of \( M \) with eigen value \( d \).</li>
+   <li> If \( G \) is a bipartite graph then \( -d \) is an eigenvalue of \( M \).
+            </div></li>
+</ol>
+
+ <div class='problem'>
+                <b>Problem 21: </b> <b>Bonus Problem</b>
+Let M be the adjacency matrix of a undirected \( d \)-regular graph \( G \) (all vertices have exactly \( d \) neighbours).
+Show that:
+
+<ol>
+   <li> If there are \( c \) linearly independent eigenvectors of \( M \) with eigen value \( d \) then \( G \) has \( c \) connected components.</li>
+   <li> If \( -d \) is an eigenvalue of \( M \) then \( G \) is a bipartite graph,.
+            </div></li>
+</ol>
+
 <h1 id="___sec38">Readings  </h1>
+
+<p>
+Chapter 10, Intro to Theory of Comp., Edition 2, Sipser
 
 <p>
 Chapter 2, Pseudorandomness survey,
@@ -1059,27 +1105,44 @@ http://theory.cs.princeton.edu/complexity/book.pdf
 
 <p>
 
-<center><h1 id="___sec39">Lecture 9: Streaming Algos  </h1></center> <hr>
+<center><h1 id="___sec39">Lecture 9:   </h1></center> <hr>
 
-<h1 id="___sec40">Readings  </h1>
+<h1 id="___sec40">Analysis of Random Walks </h1>
+
+<h1 id="___sec41">Randomization: PIT and Schwartz-Zippel Lemma </h1>
+Polynomial written as a arithmetic circuit.
 
 <p>
+PIT problem
 
-<center><h1 id="___sec41">Lecture 10: Communication Complexity  </h1></center> <hr>
+<p>
+Schwartz-Zippel Lemma
+
+<p>
+Randomized algorithm for PIT
+
+<p>
+Randomized algo for Perfect Matching
 
 <h1 id="___sec42">Readings  </h1>
 
 <p>
 
-<center><h1 id="___sec43">Lecture 11: Cryptography  </h1></center> <hr>
+<center><h1 id="___sec43">Lecture 10: Communication Complexity  </h1></center> <hr>
 
 <h1 id="___sec44">Readings  </h1>
 
 <p>
 
-<center><h1 id="___sec45">Lecture 12: Learning Theory  </h1></center> <hr>
+<center><h1 id="___sec45">Lecture 11: Cryptography  </h1></center> <hr>
 
 <h1 id="___sec46">Readings  </h1>
+
+<p>
+
+<center><h1 id="___sec47">Lecture 12: Learning Theory  </h1></center> <hr>
+
+<h1 id="___sec48">Readings  </h1>
 
 <p>
 
