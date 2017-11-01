@@ -84,17 +84,18 @@ Automatically generated HTML file from DocOnce source
               ('Readings', 1, None, '___sec38'),
               ('Lecture 9:', 0, None, '___sec39'),
               ('Analysis of Random Walks', 1, None, '___sec40'),
+              ('Derandomizing MaxCUT', 1, None, '___sec41'),
               ('Randomization: PIT and Schwartz-Zippel Lemma',
                1,
                None,
-               '___sec41'),
-              ('Readings', 1, None, '___sec42'),
-              ('Lecture 10: Communication Complexity', 0, None, '___sec43'),
-              ('Readings', 1, None, '___sec44'),
-              ('Lecture 11: Cryptography', 0, None, '___sec45'),
-              ('Readings', 1, None, '___sec46'),
-              ('Lecture 12: Learning Theory', 0, None, '___sec47'),
-              ('Readings', 1, None, '___sec48')]}
+               '___sec42'),
+              ('Readings', 1, None, '___sec43'),
+              ('Lecture 10: Communication Complexity', 0, None, '___sec44'),
+              ('Readings', 1, None, '___sec45'),
+              ('Lecture 11: Cryptography', 0, None, '___sec46'),
+              ('Readings', 1, None, '___sec47'),
+              ('Lecture 12: Learning Theory', 0, None, '___sec48'),
+              ('Readings', 1, None, '___sec49')]}
 end of tocinfo -->
 
 <body>
@@ -135,7 +136,7 @@ MathJax.Hub.Config({
 <center><b>Machine Learning Lab, IIIT Hyderabad</b></center>
 <br>
 <p>
-<center><h4>Oct 28, 2017</h4></center> <!-- date -->
+<center><h4>Nov 1, 2017</h4></center> <!-- date -->
 <br>
 
 <h1 id="table_of_contents">Table of contents</h2>
@@ -182,14 +183,15 @@ MathJax.Hub.Config({
 &nbsp; &nbsp; &nbsp; <a href="#___sec38"> Readings  </a><br>
 <a href="#___sec39"> Lecture 9:   </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec40"> Analysis of Random Walks </a><br>
-&nbsp; &nbsp; &nbsp; <a href="#___sec41"> Randomization: PIT and Schwartz-Zippel Lemma </a><br>
-&nbsp; &nbsp; &nbsp; <a href="#___sec42"> Readings  </a><br>
-<a href="#___sec43"> Lecture 10: Communication Complexity  </a><br>
-&nbsp; &nbsp; &nbsp; <a href="#___sec44"> Readings  </a><br>
-<a href="#___sec45"> Lecture 11: Cryptography  </a><br>
-&nbsp; &nbsp; &nbsp; <a href="#___sec46"> Readings  </a><br>
-<a href="#___sec47"> Lecture 12: Learning Theory  </a><br>
-&nbsp; &nbsp; &nbsp; <a href="#___sec48"> Readings  </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec41"> Derandomizing MaxCUT </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec42"> Randomization: PIT and Schwartz-Zippel Lemma </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec43"> Readings  </a><br>
+<a href="#___sec44"> Lecture 10: Communication Complexity  </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec45"> Readings  </a><br>
+<a href="#___sec46"> Lecture 11: Cryptography  </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec47"> Readings  </a><br>
+<a href="#___sec48"> Lecture 12: Learning Theory  </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec49"> Readings  </a><br>
 </p>
 <p>
 
@@ -1121,8 +1123,25 @@ http://theory.cs.princeton.edu/complexity/book.pdf
 <center><h1 id="___sec39">Lecture 9:   </h1></center> <hr>
 
 <h1 id="___sec40">Analysis of Random Walks </h1>
+See Section 7.A in Arora, Barak book.
 
-<h1 id="___sec41">Randomization: PIT and Schwartz-Zippel Lemma </h1>
+<h1 id="___sec41">Derandomizing MaxCUT </h1>
+
+<p>
+For Method of conditional expectations see:
+Chapter 3, Section 3.4 Pseudorandomness survey,
+Salil Vadhan
+
+<p>
+ <div class='problem'>
+                <b>Problem 23: </b> Recall the Approximate-7/8-3SAT from Problem 20.
+Derandomize the randomized algorithm which is 
+the solution to Problem 20, using the method of conditional expectations
+
+<p>
+</div>
+
+<h1 id="___sec42">Randomization: PIT and Schwartz-Zippel Lemma </h1>
 Polynomial written as a arithmetic circuit.
 
 <p>
@@ -1135,27 +1154,44 @@ Schwartz-Zippel Lemma
 Randomized algorithm for PIT
 
 <p>
-Randomized algo for Perfect Matching
+Chapter 2, Section 2.1 Pseudorandomness survey,
+Salil Vadhan
 
-<h1 id="___sec42">Readings  </h1>
+<h1 id="___sec43">Readings  </h1>
+
+<p>
+Chapter 2, Section 2.1 Pseudorandomness survey,
+Salil Vadhan 
+https://people.seas.harvard.edu/~salil/pseudorandomness/power.pdf
+
+<p>
+Chapter 3, Section 3.4 Pseudorandomness survey,
+Salil Vadhan 
+https://people.seas.harvard.edu/~salil/pseudorandomness/basic.pdf
+https://people.seas.harvard.edu/~salil/pseudorandomness/
+
+<p>
+Section 7.A, Chapter 7, Computational Complexity: A Modern Approach
+Sanjeev Arora and Boaz Barak
+http://theory.cs.princeton.edu/complexity/book.pdf
 
 <p>
 
-<center><h1 id="___sec43">Lecture 10: Communication Complexity  </h1></center> <hr>
+<center><h1 id="___sec44">Lecture 10: Communication Complexity  </h1></center> <hr>
 
-<h1 id="___sec44">Readings  </h1>
-
-<p>
-
-<center><h1 id="___sec45">Lecture 11: Cryptography  </h1></center> <hr>
-
-<h1 id="___sec46">Readings  </h1>
+<h1 id="___sec45">Readings  </h1>
 
 <p>
 
-<center><h1 id="___sec47">Lecture 12: Learning Theory  </h1></center> <hr>
+<center><h1 id="___sec46">Lecture 11: Cryptography  </h1></center> <hr>
 
-<h1 id="___sec48">Readings  </h1>
+<h1 id="___sec47">Readings  </h1>
+
+<p>
+
+<center><h1 id="___sec48">Lecture 12: Learning Theory  </h1></center> <hr>
+
+<h1 id="___sec49">Readings  </h1>
 
 <p>
 
