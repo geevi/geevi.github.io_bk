@@ -82,7 +82,10 @@ Automatically generated HTML file from DocOnce source
               ('Approx MAX-CUT', 1, None, '___sec36'),
               ('Undirected REACHABILITY in RL', 1, None, '___sec37'),
               ('Readings', 1, None, '___sec38'),
-              ('Lecture 9:', 0, None, '___sec39'),
+              ('Lecture 9: Random Walks, Derandomization and PIT',
+               0,
+               None,
+               '___sec39'),
               ('Analysis of Random Walks', 1, None, '___sec40'),
               ('Derandomizing MaxCUT', 1, None, '___sec41'),
               ('Randomization: PIT and Schwartz-Zippel Lemma',
@@ -90,12 +93,30 @@ Automatically generated HTML file from DocOnce source
                None,
                '___sec42'),
               ('Readings', 1, None, '___sec43'),
-              ('Lecture 10: Communication Complexity', 0, None, '___sec44'),
-              ('Readings', 1, None, '___sec45'),
-              ('Lecture 11: Cryptography', 0, None, '___sec46'),
-              ('Readings', 1, None, '___sec47'),
-              ('Lecture 12: Learning Theory', 0, None, '___sec48'),
-              ('Readings', 1, None, '___sec49')]}
+              ('Lecture 10: Streaming Algorithms and Lowerbounds',
+               0,
+               None,
+               '___sec44'),
+              ('Schwartz Zippel Lemma Proof', 1, None, '___sec45'),
+              ('Lowerbound for Bracket Matching', 1, None, '___sec46'),
+              ('Randomized Streaming Algorithm for Bracket Matching',
+               1,
+               None,
+               '___sec47'),
+              ('Readings', 1, None, '___sec48'),
+              ('Lecture 11: Property Testing', 0, None, '___sec49'),
+              ('Property Testing Model', 1, None, '___sec50'),
+              ('Linearity Test by Blum, Luby and Rubinfield',
+               1,
+               None,
+               '___sec51'),
+              ('Readings', 1, None, '___sec52'),
+              ('Lecture 12: Learning Theory', 0, None, '___sec53'),
+              ('Probably Approximately Correct!', 1, None, '___sec54'),
+              ('Learning Rectangles', 1, None, '___sec55'),
+              ('Learning CNFs', 1, None, '___sec56'),
+              ('Lowerbounds', 1, None, '___sec57'),
+              ('Readings', 1, None, '___sec58')]}
 end of tocinfo -->
 
 <body>
@@ -136,7 +157,7 @@ MathJax.Hub.Config({
 <center><b>Machine Learning Lab, IIIT Hyderabad</b></center>
 <br>
 <p>
-<center><h4>Nov 1, 2017</h4></center> <!-- date -->
+<center><h4>Nov 11, 2017</h4></center> <!-- date -->
 <br>
 
 <h1 id="table_of_contents">Table of contents</h2>
@@ -181,17 +202,26 @@ MathJax.Hub.Config({
 &nbsp; &nbsp; &nbsp; <a href="#___sec36">  Approx MAX-CUT  </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec37"> Undirected REACHABILITY in RL </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec38"> Readings  </a><br>
-<a href="#___sec39"> Lecture 9:   </a><br>
+<a href="#___sec39"> Lecture 9: Random Walks, Derandomization and PIT  </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec40"> Analysis of Random Walks </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec41"> Derandomizing MaxCUT </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec42"> Randomization: PIT and Schwartz-Zippel Lemma </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec43"> Readings  </a><br>
-<a href="#___sec44"> Lecture 10: Communication Complexity  </a><br>
-&nbsp; &nbsp; &nbsp; <a href="#___sec45"> Readings  </a><br>
-<a href="#___sec46"> Lecture 11: Cryptography  </a><br>
-&nbsp; &nbsp; &nbsp; <a href="#___sec47"> Readings  </a><br>
-<a href="#___sec48"> Lecture 12: Learning Theory  </a><br>
-&nbsp; &nbsp; &nbsp; <a href="#___sec49"> Readings  </a><br>
+<a href="#___sec44"> Lecture 10: Streaming Algorithms and Lowerbounds  </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec45"> Schwartz Zippel Lemma Proof  </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec46"> Lowerbound for Bracket Matching  </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec47"> Randomized Streaming Algorithm for Bracket Matching  </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec48"> Readings  </a><br>
+<a href="#___sec49"> Lecture 11: Property Testing  </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec50"> Property Testing Model  </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec51"> Linearity Test by Blum, Luby and Rubinfield  </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec52"> Readings  </a><br>
+<a href="#___sec53"> Lecture 12: Learning Theory  </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec54"> Probably Approximately Correct!  </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec55"> Learning Rectangles  </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec56"> Learning CNFs  </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec57"> Lowerbounds  </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec58"> Readings  </a><br>
 </p>
 <p>
 
@@ -1120,7 +1150,7 @@ http://theory.cs.princeton.edu/complexity/book.pdf
 
 <p>
 
-<center><h1 id="___sec39">Lecture 9:   </h1></center> <hr>
+<center><h1 id="___sec39">Lecture 9: Random Walks, Derandomization and PIT  </h1></center> <hr>
 
 <h1 id="___sec40">Analysis of Random Walks </h1>
 See Section 7.A in Arora, Barak book.
@@ -1177,21 +1207,112 @@ http://theory.cs.princeton.edu/complexity/book.pdf
 
 <p>
 
-<center><h1 id="___sec44">Lecture 10: Communication Complexity  </h1></center> <hr>
+<center><h1 id="___sec44">Lecture 10: Streaming Algorithms and Lowerbounds  </h1></center> <hr>
 
-<h1 id="___sec45">Readings  </h1>
+<h1 id="___sec45">Schwartz Zippel Lemma Proof  </h1>
+
+<p>
+See Proof of Lemma A.25 in <a href="http://theory.cs.princeton.edu/complexity/book.pdf" target="_self"><tt>http://theory.cs.princeton.edu/complexity/book.pdf</tt></a>
+
+<p>
+It is a simple proof by induction.
+
+<h1 id="___sec46">Lowerbound for Bracket Matching  </h1>
+
+<p>
+For strings \( x,y \in \{0,1\}^n \), we showed that any determinsitic streaming 
+algorithm which given input \( x \cdot y \) checks if \( x = y \) will require \( n \) bits
+of memory.
+
+<p>
+Same proof also holds for checking if \( x = \text{reverse}(y) \). Using a streaming reduction
+we showed that for the same lowerbound holds for the bracket matching problem also.
+
+<p>
+ <div class='problem'>
+                <b>Problem 24: </b> Why is a streaming reduction required above?
+
+<p>
+Will using a log-space or polynomial time reduction result in the proof of the same lowerbound?
+
+<p>
+</div>
+
+<p>
+ <div class='problem'>
+                <b>Problem 25: </b> Given a string \( x \in \{0,1\}^n \), let the set represented by it be 
+\( S_x = \{ i : x_i = 1 \} \).
+
+<p>
+Show that any deterministic streaming algorithm which on input \( x \cdot y \) (x,y are strings of length \( n \) ie \( \in \{0,1\}^n \)),
+checks whether \( S_x \) and \( S_y \) are disjoint requires \( n \) bits of memory.
+
+<p>
+</div>
+
+<h1 id="___sec47">Randomized Streaming Algorithm for Bracket Matching  </h1>
+
+<p>
+See <a href="https://www.dropbox.com/s/j7p2enoptwzky25/slides.pdf" target="_self"><tt>https://www.dropbox.com/s/j7p2enoptwzky25/slides.pdf</tt></a>?dl=0
+
+<p>
+ <div class='problem'>
+                <b>Problem 26: </b> The algorithm discussed in class (see the above slides), as mentioned in the slides 
+only works for a restricted case of bracket matching (1-turn DYCK).
+
+<p>
+Give a counter example for the algorithm for the general bracket matching problem.
+
+<p>
+</div>
+
+<p>
+ <div class='problem'>
+                <b>Problem 27: </b> Give a randomized streaming algorithm (with one sided error) which on input \( x \cdot y \) (x,y are strings of length \( n \) ie \( \in \{0,1,2\}^n \)),
+checks whether \( x=y \) which uses only \( O(\log n) \) bits of memory.
+
+<p>
+Show its correctness.
+
+<p>
+</div>
+
+<h1 id="___sec48">Readings  </h1>
 
 <p>
 
-<center><h1 id="___sec46">Lecture 11: Cryptography  </h1></center> <hr>
+<center><h1 id="___sec49">Lecture 11: Property Testing  </h1></center> <hr>
 
-<h1 id="___sec47">Readings  </h1>
+<h1 id="___sec50">Property Testing Model  </h1>
+
+<h1 id="___sec51">Linearity Test by Blum, Luby and Rubinfield  </h1>
 
 <p>
+See Section 5.2 in <a href="http://www.tcs.tifr.res.in/~prahladh/teaching/2009-10/limits/lectures/lec05.pdf" target="_self"><tt>http://www.tcs.tifr.res.in/~prahladh/teaching/2009-10/limits/lectures/lec05.pdf</tt></a>
 
-<center><h1 id="___sec48">Lecture 12: Learning Theory  </h1></center> <hr>
+<h1 id="___sec52">Readings  </h1>
 
-<h1 id="___sec49">Readings  </h1>
+<p>
+http://www.tcs.tifr.res.in/~prahladh/teaching/2009-10/limits/lectures/lec05.pdf
+
+<center><h1 id="___sec53">Lecture 12: Learning Theory  </h1></center> <hr>
+
+<h1 id="___sec54">Probably Approximately Correct!  </h1>
+
+<p>
+See <a href="http://courses.csail.mit.edu/6.858/lecture04.ps" target="_self"><tt>http://courses.csail.mit.edu/6.858/lecture04.ps</tt></a>
+
+<h1 id="___sec55">Learning Rectangles  </h1>
+
+<p>
+http://www.cs.utexas.edu/~klivans/f06lec2.pdf
+
+<h1 id="___sec56">Learning CNFs  </h1>
+
+<h1 id="___sec57">Lowerbounds  </h1>
+http://courses.csail.mit.edu/6.858/lecture05.ps
+
+<h1 id="___sec58">Readings  </h1>
 
 <p>
 
